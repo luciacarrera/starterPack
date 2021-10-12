@@ -1,7 +1,7 @@
-### StarterPack: USA
+# StarterPack: USA
 Authors: Maggie Lucas, Joe Wills, Emily Faherty & Lucía Carrera
 
-# Components
+## Components
 - First screen (shows login and register options)
 - Login screen
 - Register screen
@@ -24,7 +24,7 @@ Authors: Maggie Lucas, Joe Wills, Emily Faherty & Lucía Carrera
 
 ## Requirements
 
-# Deliverable 2 (Oct 23rd)
+### Deliverable 2 (Oct 23rd)
 - Have menu to access tools
 - Initial version of hamburger menu
 - Temperature converter completed
@@ -32,8 +32,8 @@ Authors: Maggie Lucas, Joe Wills, Emily Faherty & Lucía Carrera
 - Pop up should appear before calling emergency number
 - Initial currency conversion (Euro <-> USD)
 - Initial versions of all tools
-- 
-# Interim Deliverable (November)
+
+### Interim Deliverable (November)
 - User should be able to access credits, contact, settings screens.
 - Remember what country user is from
 - User should be able to access settings and modify them
@@ -41,7 +41,7 @@ Authors: Maggie Lucas, Joe Wills, Emily Faherty & Lucía Carrera
 - User should be able to change their profile
 - A little better versions of all tools
 
-# Final Deliverable (December 3rd)
+### Final Deliverable (December 3rd)
 - Screen should be aesthetic and cohesive
 - Temperature screen will indicate if cold or hot through background
 - World clock screen will indicate if night, day or afternoon through background
