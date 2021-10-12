@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12o-GV-QzQ">
-                                <rect key="frame" x="173" y="114" width="68" height="21"/>
+                                <rect key="frame" x="173" y="124" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-7n-TOe">
-                                <rect key="frame" x="68.5" y="361.5" width="58" height="31"/>
+                                <rect key="frame" x="30" y="361.5" width="58" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="temp"/>
                             </button>
@@ -34,12 +34,12 @@
                                 <buttonConfiguration key="configuration" style="gray" title="currency"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-JR-ODm">
-                                <rect key="frame" x="287.5" y="361.5" width="80" height="31"/>
+                                <rect key="frame" x="304" y="361.5" width="80" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="measure"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MR-jF-r6I">
-                                <rect key="frame" x="82.5" y="432.5" width="53" height="31"/>
+                                <rect key="frame" x="30" y="432.5" width="53" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="time"/>
                             </button>
@@ -49,12 +49,12 @@
                                 <buttonConfiguration key="configuration" style="gray" title="traffic"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-eH-zSv">
-                                <rect key="frame" x="278.5" y="432.5" width="76" height="31"/>
+                                <rect key="frame" x="308" y="432.5" width="76" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="clothing"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-U9-jWW">
-                                <rect key="frame" x="50.5" y="503.5" width="76" height="31"/>
+                                <rect key="frame" x="30" y="503.5" width="76" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="phrases"/>
                             </button>
@@ -64,7 +64,7 @@
                                 <buttonConfiguration key="configuration" style="gray" title="translate"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64c-WO-XiD">
-                                <rect key="frame" x="287.5" y="503.5" width="97" height="31"/>
+                                <rect key="frame" x="287" y="503.5" width="97" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="emergency"/>
                             </button>
@@ -72,28 +72,31 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ebm-Xh-PtH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1sZ-3o-Ntn"/>
-                            <constraint firstItem="ebm-Xh-PtH" firstAttribute="leading" secondItem="8MR-jF-r6I" secondAttribute="trailing" constant="40" id="2Zf-k5-FaA"/>
-                            <constraint firstItem="9vo-IG-r8W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="74b-4g-Ieg"/>
-                            <constraint firstItem="8MR-jF-r6I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8FH-D7-PR7"/>
-                            <constraint firstItem="ebm-Xh-PtH" firstAttribute="top" secondItem="dvK-7x-i8b" secondAttribute="bottom" constant="40" id="8rs-Ie-b7m"/>
-                            <constraint firstItem="nFc-eH-zSv" firstAttribute="top" secondItem="4LV-JR-ODm" secondAttribute="bottom" constant="40" id="EVD-Dk-LQ1"/>
-                            <constraint firstItem="64c-WO-XiD" firstAttribute="top" secondItem="nFc-eH-zSv" secondAttribute="bottom" constant="40" id="HkJ-lX-DFU"/>
-                            <constraint firstItem="ebm-Xh-PtH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kwm-fc-J1w"/>
-                            <constraint firstItem="nFc-eH-zSv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N8y-v1-jkr"/>
-                            <constraint firstItem="12o-GV-QzQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="S4j-Ra-yKV"/>
-                            <constraint firstItem="8MR-jF-r6I" firstAttribute="top" secondItem="PJf-7n-TOe" secondAttribute="bottom" constant="40" id="YMp-nb-Oj7"/>
-                            <constraint firstItem="64c-WO-XiD" firstAttribute="leading" secondItem="9vo-IG-r8W" secondAttribute="trailing" constant="40" id="bNi-Sr-GUj"/>
-                            <constraint firstItem="4LV-JR-ODm" firstAttribute="leading" secondItem="dvK-7x-i8b" secondAttribute="trailing" constant="40" id="efa-qt-guz"/>
-                            <constraint firstItem="12o-GV-QzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhE-m2-Bap"/>
-                            <constraint firstItem="9vo-IG-r8W" firstAttribute="leading" secondItem="zYu-U9-jWW" secondAttribute="trailing" constant="40" id="joD-3T-80j"/>
-                            <constraint firstItem="nFc-eH-zSv" firstAttribute="leading" secondItem="ebm-Xh-PtH" secondAttribute="trailing" constant="40" id="ltP-N8-bGJ"/>
-                            <constraint firstItem="dvK-7x-i8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mXo-of-52g"/>
-                            <constraint firstItem="9vo-IG-r8W" firstAttribute="top" secondItem="ebm-Xh-PtH" secondAttribute="bottom" constant="40" id="ojl-OR-VCW"/>
-                            <constraint firstItem="zYu-U9-jWW" firstAttribute="top" secondItem="8MR-jF-r6I" secondAttribute="bottom" constant="40" id="s86-jD-WF0"/>
-                            <constraint firstItem="dvK-7x-i8b" firstAttribute="leading" secondItem="PJf-7n-TOe" secondAttribute="trailing" constant="40" id="u8o-DQ-aNW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64c-WO-XiD" secondAttribute="trailing" constant="30" id="2PR-0A-JZb"/>
+                            <constraint firstItem="12o-GV-QzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOv-1Q-foc"/>
+                            <constraint firstItem="zYu-U9-jWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="F79-2b-Pld"/>
+                            <constraint firstItem="ebm-Xh-PtH" firstAttribute="top" secondItem="dvK-7x-i8b" secondAttribute="bottom" constant="40" id="Fdl-PB-ptl"/>
+                            <constraint firstItem="nFc-eH-zSv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HY6-t0-urH"/>
+                            <constraint firstItem="8MR-jF-r6I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KL7-Df-vJ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nFc-eH-zSv" secondAttribute="trailing" constant="30" id="NFv-vc-uMX"/>
+                            <constraint firstItem="ebm-Xh-PtH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WER-4V-VwO"/>
+                            <constraint firstItem="9vo-IG-r8W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Whf-e0-9An"/>
+                            <constraint firstItem="ebm-Xh-PtH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="frW-Nj-6yH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4LV-JR-ODm" secondAttribute="trailing" constant="30" id="i69-Pm-gYw"/>
+                            <constraint firstItem="4LV-JR-ODm" firstAttribute="centerY" secondItem="PJf-7n-TOe" secondAttribute="centerY" id="kTO-Qr-v0O"/>
+                            <constraint firstItem="64c-WO-XiD" firstAttribute="centerY" secondItem="zYu-U9-jWW" secondAttribute="centerY" id="ndl-Bh-xwP"/>
+                            <constraint firstItem="dvK-7x-i8b" firstAttribute="centerY" secondItem="PJf-7n-TOe" secondAttribute="centerY" id="red-Qy-HOV"/>
+                            <constraint firstItem="8MR-jF-r6I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uAN-bJ-US6"/>
+                            <constraint firstItem="12o-GV-QzQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="vUq-Fo-P13"/>
+                            <constraint firstItem="9vo-IG-r8W" firstAttribute="top" secondItem="ebm-Xh-PtH" secondAttribute="bottom" constant="40" id="vdl-7z-xB4"/>
+                            <constraint firstItem="9vo-IG-r8W" firstAttribute="centerY" secondItem="zYu-U9-jWW" secondAttribute="centerY" id="x2q-yt-hvh"/>
+                            <constraint firstItem="dvK-7x-i8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zCJ-hn-beu"/>
+                            <constraint firstItem="PJf-7n-TOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zuB-Ka-iCD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcome" destination="12o-GV-QzQ" id="UHy-Sc-aSK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
