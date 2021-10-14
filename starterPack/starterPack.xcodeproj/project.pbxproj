@@ -15,7 +15,15 @@
 		9B4391942715D73C00DC0A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4391922715D73C00DC0A49 /* LaunchScreen.storyboard */; };
 		9B43919F2715D73D00DC0A49 /* starterPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43919E2715D73D00DC0A49 /* starterPackTests.swift */; };
 		9B4391AA2715D73D00DC0A49 /* starterPackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4391A92715D73D00DC0A49 /* starterPackUITests.swift */; };
-		9BC7777E2718759500D4BCC8 /* PlusMinusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7777D2718759500D4BCC8 /* PlusMinusViewController.swift */; };
+		9BC7778627187A7B00D4BCC8 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7778527187A7B00D4BCC8 /* TemperatureViewController.swift */; };
+		9BC7778B27187A8C00D4BCC8 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7778A27187A8C00D4BCC8 /* TimeViewController.swift */; };
+		9BC7779027187A9600D4BCC8 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7778F27187A9600D4BCC8 /* CurrencyViewController.swift */; };
+		9BC7779527187A9E00D4BCC8 /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7779427187A9E00D4BCC8 /* MeasurementViewController.swift */; };
+		9BC7779A27187AAA00D4BCC8 /* TrafficViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7779927187AAA00D4BCC8 /* TrafficViewController.swift */; };
+		9BC7779F27187AB500D4BCC8 /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7779E27187AB500D4BCC8 /* ClothingViewController.swift */; };
+		9BC777A427187AC000D4BCC8 /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */; };
+		9BC777A927187ACE00D4BCC8 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777A827187ACE00D4BCC8 /* TranslateViewController.swift */; };
+		9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +58,15 @@
 		9B4391A52715D73D00DC0A49 /* starterPackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starterPackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4391A92715D73D00DC0A49 /* starterPackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starterPackUITests.swift; sourceTree = "<group>"; };
 		9B4391AB2715D73D00DC0A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BC7777D2718759500D4BCC8 /* PlusMinusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusMinusViewController.swift; sourceTree = "<group>"; };
+		9BC7778527187A7B00D4BCC8 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		9BC7778A27187A8C00D4BCC8 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		9BC7778F27187A9600D4BCC8 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		9BC7779427187A9E00D4BCC8 /* MeasurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewController.swift; sourceTree = "<group>"; };
+		9BC7779927187AAA00D4BCC8 /* TrafficViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficViewController.swift; sourceTree = "<group>"; };
+		9BC7779E27187AB500D4BCC8 /* ClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
+		9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesViewController.swift; sourceTree = "<group>"; };
+		9BC777A827187ACE00D4BCC8 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +121,15 @@
 				9B4391892715D73800DC0A49 /* SceneDelegate.swift */,
 				9B43918B2715D73800DC0A49 /* ViewController.swift */,
 				9B43918D2715D73800DC0A49 /* Main.storyboard */,
-				9BC7777D2718759500D4BCC8 /* PlusMinusViewController.swift */,
+				9BC7778527187A7B00D4BCC8 /* TemperatureViewController.swift */,
+				9BC7778A27187A8C00D4BCC8 /* TimeViewController.swift */,
+				9BC7778F27187A9600D4BCC8 /* CurrencyViewController.swift */,
+				9BC7779427187A9E00D4BCC8 /* MeasurementViewController.swift */,
+				9BC7779927187AAA00D4BCC8 /* TrafficViewController.swift */,
+				9BC7779E27187AB500D4BCC8 /* ClothingViewController.swift */,
+				9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */,
+				9BC777A827187ACE00D4BCC8 /* TranslateViewController.swift */,
+				9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */,
 				9B4391902715D73C00DC0A49 /* Assets.xcassets */,
 				9B4391922715D73C00DC0A49 /* LaunchScreen.storyboard */,
 				9B4391952715D73C00DC0A49 /* Info.plist */,
@@ -262,9 +286,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B43918C2715D73800DC0A49 /* ViewController.swift in Sources */,
+				9BC7779027187A9600D4BCC8 /* CurrencyViewController.swift in Sources */,
+				9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */,
+				9BC7778B27187A8C00D4BCC8 /* TimeViewController.swift in Sources */,
 				9B4391882715D73800DC0A49 /* AppDelegate.swift in Sources */,
+				9BC7779A27187AAA00D4BCC8 /* TrafficViewController.swift in Sources */,
+				9BC7779F27187AB500D4BCC8 /* ClothingViewController.swift in Sources */,
 				9B43918A2715D73800DC0A49 /* SceneDelegate.swift in Sources */,
-				9BC7777E2718759500D4BCC8 /* PlusMinusViewController.swift in Sources */,
+				9BC777A927187ACE00D4BCC8 /* TranslateViewController.swift in Sources */,
+				9BC777A427187AC000D4BCC8 /* PhrasesViewController.swift in Sources */,
+				9BC7778627187A7B00D4BCC8 /* TemperatureViewController.swift in Sources */,
+				9BC7779527187A9E00D4BCC8 /* MeasurementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

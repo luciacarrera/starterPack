@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="84.375"/>
         </scene>
-        <!--View Controller-->
+        <!--Measurement View Controller-->
         <scene sceneID="Eid-Bz-6zA">
             <objects>
-                <viewController id="v7J-Jx-DDG" sceneMemberID="viewController">
+                <viewController id="v7J-Jx-DDG" customClass="MeasurementViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hFK-4f-MxS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="-2055" y="412"/>
         </scene>
-        <!--View Controller-->
+        <!--Translate View Controller-->
         <scene sceneID="fwv-P5-i7r">
             <objects>
-                <viewController id="Z4e-UA-XIl" sceneMemberID="viewController">
+                <viewController id="Z4e-UA-XIl" customClass="TranslateViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CCE-cS-zoc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="-1359" y="1135"/>
         </scene>
-        <!--View Controller-->
+        <!--Currency View Controller-->
         <scene sceneID="Hmm-Zi-qvO">
             <objects>
-                <viewController id="qEe-Hp-oMV" sceneMemberID="viewController">
+                <viewController id="qEe-Hp-oMV" customClass="CurrencyViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRC-jM-ce3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="-690" y="-274"/>
         </scene>
-        <!--View Controller-->
+        <!--Phrases View Controller-->
         <scene sceneID="MtE-MQ-nRD">
             <objects>
-                <viewController id="9ic-bn-VeZ" sceneMemberID="viewController">
+                <viewController id="9ic-bn-VeZ" customClass="PhrasesViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="773-NR-Fm5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="-2055" y="1134"/>
         </scene>
-        <!--View Controller-->
+        <!--Traffic View Controller-->
         <scene sceneID="sfy-nq-SoR">
             <objects>
-                <viewController id="raR-NU-WTg" sceneMemberID="viewController">
+                <viewController id="raR-NU-WTg" customClass="TrafficViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ggr-eo-vvu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,10 +194,10 @@
             </objects>
             <point key="canvasLocation" x="-1359" y="412"/>
         </scene>
-        <!--View Controller-->
+        <!--Emergency View Controller-->
         <scene sceneID="Obs-fj-Vo2">
             <objects>
-                <viewController id="r0a-dm-Tdt" sceneMemberID="viewController">
+                <viewController id="r0a-dm-Tdt" customClass="EmergencyViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTY-T5-Qhk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="-691" y="1134"/>
         </scene>
-        <!--View Controller-->
+        <!--Clothing View Controller-->
         <scene sceneID="1dD-cM-a73">
             <objects>
-                <viewController id="rBY-Qi-fCc" sceneMemberID="viewController">
+                <viewController id="rBY-Qi-fCc" customClass="ClothingViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q67-8E-R0m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,60 +224,25 @@
             </objects>
             <point key="canvasLocation" x="-691" y="412"/>
         </scene>
-        <!--Plus Minus View Controller-->
+        <!--Temperature View Controller-->
         <scene sceneID="oQ4-WJ-ZUa">
             <objects>
-                <viewController storyboardIdentifier="PlusMinusViewController" id="PGg-BK-K4z" customClass="PlusMinusViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlusMinusViewController" id="PGg-BK-K4z" customClass="TemperatureViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e6Q-nA-AGn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUW-zm-TgX">
-                                <rect key="frame" x="108" y="358" width="37" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="increment:" destination="PGg-BK-K4z" eventType="touchDown" id="Occ-ky-fFz"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnt-zs-Nzs">
-                                <rect key="frame" x="198" y="210" width="22" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqm-Bn-Isy">
-                                <rect key="frame" x="280" y="358" width="30" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="-"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76f-gv-KbV">
-                                <rect key="frame" x="280" y="358" width="30" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="-"/>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Aw6-nM-6Gg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Fqm-Bn-Isy" firstAttribute="top" secondItem="Aw6-nM-6Gg" secondAttribute="top" constant="358" id="HJv-jI-xS6"/>
-                            <constraint firstItem="uUW-zm-TgX" firstAttribute="top" secondItem="Aw6-nM-6Gg" secondAttribute="top" constant="358" id="MWD-f2-ccu"/>
-                            <constraint firstItem="vnt-zs-Nzs" firstAttribute="top" secondItem="Aw6-nM-6Gg" secondAttribute="top" constant="210" id="RS7-FU-74b"/>
-                            <constraint firstItem="Fqm-Bn-Isy" firstAttribute="leading" secondItem="uUW-zm-TgX" secondAttribute="trailing" constant="135" id="UfF-Ic-zME"/>
-                            <constraint firstItem="vnt-zs-Nzs" firstAttribute="leading" secondItem="Aw6-nM-6Gg" secondAttribute="leading" constant="198" id="ZfC-fi-8f3"/>
-                            <constraint firstItem="uUW-zm-TgX" firstAttribute="leading" secondItem="Aw6-nM-6Gg" secondAttribute="leading" constant="108" id="dWO-jD-h0v"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lp7-c0-MXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2054" y="-275"/>
         </scene>
-        <!--View Controller-->
+        <!--Time View Controller-->
         <scene sceneID="uDz-IC-h3x">
             <objects>
-                <viewController id="nns-ci-e4i" sceneMemberID="viewController">
+                <viewController id="nns-ci-e4i" customClass="TimeViewController" customModule="starterPack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VzQ-dt-USy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
