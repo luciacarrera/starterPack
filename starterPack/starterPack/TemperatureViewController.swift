@@ -18,7 +18,7 @@ class TemperatureViewController: UIViewController {
     //initialize label and buttons
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var fahrenheitField: UITextField!
-    //@IBOutlet var fahrenheitLabel: UILabel!
+    @IBOutlet var fahrenheitLabel: UILabel!
     @IBOutlet var celsiusField: UITextField!
     
     var fahrenheitValue: Measurement<UnitTemperature>? {
@@ -27,11 +27,17 @@ class TemperatureViewController: UIViewController {
         }
     }
     var celsiusValue: Measurement<UnitTemperature>? {
+        didSet {
+            updateFahrenheitLabel()
+        }
+        
+        /*
         if let fahrenheitValue = fahrenheitValue {
             return fahrenheitValue.converted(to: .celsius)
         } else {
             return nil
         }
+         */
     }
     
     let numberFormatter: NumberFormatter = {
@@ -43,10 +49,18 @@ class TemperatureViewController: UIViewController {
     }()
     
     func updateCelsiusLabel() {
-        if let celsiusValue = celsiusValue {
+        if let celsiusValue = fahrenheitValue?.converted(to: .celsius) {
             celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
         } else {
             celsiusLabel.text = "???"
+        }
+    }
+    
+    func updateFahrenheitLabel() {
+        if let fahrenheitValue = celsiusValue?.converted(to: .fahrenheit) {
+            fahrenheitLabel.text = numberFormatter.string(from: NSNumber(value: fahrenheitValue.value))
+        } else {
+            fahrenheitLabel.text = "???"
         }
     }
     
@@ -57,8 +71,18 @@ class TemperatureViewController: UIViewController {
             fahrenheitValue = nil
         }
     }
+    @IBAction func celsiusFieldEditingChanged(_ celsiusField: UITextField) {
+        if let text = celsiusField.text, let value = Double(text) {
+            celsiusValue = Measurement(value: value, unit: .celsius)
+        } else {
+            celsiusValue = nil
+        }
+    }
+    
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         fahrenheitField.resignFirstResponder()
+        celsiusField.resignFirstResponder()
+
     }
     
 

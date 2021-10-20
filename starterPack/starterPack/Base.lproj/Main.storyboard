@@ -233,8 +233,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="fIn" placeholder="32" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8c-7j-Buu">
-                                <rect key="frame" x="175" y="200" width="64.5" height="67.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="32" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8c-7j-Buu">
+                                <rect key="frame" x="175" y="150" width="64.5" height="67.5"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
@@ -242,18 +242,23 @@
                                     <action selector="fahrenheitFieldEditingChanged:" destination="PGg-BK-K4z" eventType="editingChanged" id="rwu-M6-IO3"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="cIn" placeholder="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4W-LN-yfg">
-                                <rect key="frame" x="172" y="484.5" width="70" height="67.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4W-LN-yfg">
+                                <rect key="frame" x="190" y="580.5" width="34" height="67.5"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="celsiusField:" destination="PGg-BK-K4z" eventType="editingDidEnd" id="xet-kM-8dC"/>
-                                    <action selector="fahrenheitFieldEditingChanged:" destination="PGg-BK-K4z" eventType="editingChanged" id="ELz-wK-dHN"/>
+                                    <action selector="celsiusFieldEditingChanged:" destination="PGg-BK-K4z" eventType="editingChanged" id="uuF-dQ-g5f"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cVal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM0-Ay-Pw0">
-                                <rect key="frame" x="158.5" y="562" width="97" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM0-Ay-Pw0">
+                                <rect key="frame" x="207" y="658" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms5-K5-ung">
+                                <rect key="frame" x="207" y="227.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <nil key="highlightedColor"/>
@@ -263,12 +268,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="gM0-Ay-Pw0" firstAttribute="centerX" secondItem="M8c-7j-Buu" secondAttribute="centerX" id="HqR-S6-xmt"/>
-                            <constraint firstItem="M8c-7j-Buu" firstAttribute="top" secondItem="Aw6-nM-6Gg" secondAttribute="top" constant="200" id="QqY-tq-Gag"/>
-                            <constraint firstItem="M8c-7j-Buu" firstAttribute="centerX" secondItem="e6Q-nA-AGn" secondAttribute="centerX" id="Xz5-mK-Txd"/>
-                            <constraint firstItem="Aw6-nM-6Gg" firstAttribute="bottom" secondItem="gM0-Ay-Pw0" secondAttribute="bottom" constant="180" id="dv4-QU-FOe"/>
-                            <constraint firstItem="gM0-Ay-Pw0" firstAttribute="top" secondItem="z4W-LN-yfg" secondAttribute="bottom" constant="10" id="lup-ij-S5O"/>
-                            <constraint firstItem="z4W-LN-yfg" firstAttribute="centerX" secondItem="M8c-7j-Buu" secondAttribute="centerX" id="nXh-at-CXS"/>
+                            <constraint firstItem="Aw6-nM-6Gg" firstAttribute="bottom" secondItem="gM0-Ay-Pw0" secondAttribute="bottom" constant="150" id="8JF-JE-tjW"/>
+                            <constraint firstItem="ms5-K5-ung" firstAttribute="centerX" secondItem="M8c-7j-Buu" secondAttribute="centerX" id="Sys-6z-I77"/>
+                            <constraint firstItem="z4W-LN-yfg" firstAttribute="centerX" secondItem="M8c-7j-Buu" secondAttribute="centerX" id="Vi8-Kx-9FO"/>
+                            <constraint firstItem="M8c-7j-Buu" firstAttribute="centerX" secondItem="e6Q-nA-AGn" secondAttribute="centerX" id="WZW-hc-UQS"/>
+                            <constraint firstItem="gM0-Ay-Pw0" firstAttribute="centerX" secondItem="M8c-7j-Buu" secondAttribute="centerX" id="tcv-5E-Sm4"/>
+                            <constraint firstItem="ms5-K5-ung" firstAttribute="top" secondItem="M8c-7j-Buu" secondAttribute="bottom" constant="10" id="wjo-P2-Qu3"/>
+                            <constraint firstItem="gM0-Ay-Pw0" firstAttribute="top" secondItem="z4W-LN-yfg" secondAttribute="bottom" constant="10" id="xbN-aj-sS6"/>
+                            <constraint firstItem="M8c-7j-Buu" firstAttribute="top" secondItem="Aw6-nM-6Gg" secondAttribute="top" constant="150" id="zHD-nr-NyC"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="hat-4h-jj6" appends="YES" id="pfF-xc-KQ0"/>
@@ -278,6 +285,7 @@
                         <outlet property="celsiusField" destination="z4W-LN-yfg" id="SNj-AU-mMk"/>
                         <outlet property="celsiusLabel" destination="gM0-Ay-Pw0" id="bIA-eB-Agj"/>
                         <outlet property="fahrenheitField" destination="M8c-7j-Buu" id="efP-xo-s6Y"/>
+                        <outlet property="fahrenheitLabel" destination="ms5-K5-ung" id="P2W-cB-IJi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lp7-c0-MXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
