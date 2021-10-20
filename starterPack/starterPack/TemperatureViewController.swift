@@ -16,9 +16,7 @@ class TemperatureViewController: UIViewController {
     }
     
     //initialize label and buttons
-    @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var fahrenheitField: UITextField!
-    @IBOutlet var fahrenheitLabel: UILabel!
     @IBOutlet var celsiusField: UITextField!
     
     var fahrenheitValue: Measurement<UnitTemperature>? {
@@ -30,14 +28,6 @@ class TemperatureViewController: UIViewController {
         didSet {
             updateFahrenheitLabel()
         }
-        
-        /*
-        if let fahrenheitValue = fahrenheitValue {
-            return fahrenheitValue.converted(to: .celsius)
-        } else {
-            return nil
-        }
-         */
     }
     
     let numberFormatter: NumberFormatter = {
@@ -50,17 +40,17 @@ class TemperatureViewController: UIViewController {
     
     func updateCelsiusLabel() {
         if let celsiusValue = fahrenheitValue?.converted(to: .celsius) {
-            celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
+            celsiusField.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
         } else {
-            celsiusLabel.text = "???"
+            celsiusField.text = "???"
         }
     }
     
     func updateFahrenheitLabel() {
         if let fahrenheitValue = celsiusValue?.converted(to: .fahrenheit) {
-            fahrenheitLabel.text = numberFormatter.string(from: NSNumber(value: fahrenheitValue.value))
+            fahrenheitField.text = numberFormatter.string(from: NSNumber(value: fahrenheitValue.value))
         } else {
-            fahrenheitLabel.text = "???"
+            fahrenheitField.text = "???"
         }
     }
     
@@ -71,6 +61,7 @@ class TemperatureViewController: UIViewController {
             fahrenheitValue = nil
         }
     }
+    
     @IBAction func celsiusFieldEditingChanged(_ celsiusField: UITextField) {
         if let text = celsiusField.text, let value = Double(text) {
             celsiusValue = Measurement(value: value, unit: .celsius)
@@ -84,20 +75,4 @@ class TemperatureViewController: UIViewController {
         celsiusField.resignFirstResponder()
 
     }
-    
-
-
 }
-
-        
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
