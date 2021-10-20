@@ -11,11 +11,62 @@ class TemperatureViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print("Conversion Controller did load")
+        updateCelsiusLabel()
+    }
+    
+    //initialize label and buttons
+    @IBOutlet var celsiusLabel: UILabel!
+    @IBOutlet var fahrenheitField: UITextField!
+    //@IBOutlet var fahrenheitLabel: UILabel!
+    @IBOutlet var celsiusField: UITextField!
+    
+    var fahrenheitValue: Measurement<UnitTemperature>? {
+        didSet {
+            updateCelsiusLabel()
+        }
+    }
+    var celsiusValue: Measurement<UnitTemperature>? {
+        if let fahrenheitValue = fahrenheitValue {
+            return fahrenheitValue.converted(to: .celsius)
+        } else {
+            return nil
+        }
+    }
+    
+    let numberFormatter: NumberFormatter = {
+        let nf = NumberFormatter()
+        nf.numberStyle = .decimal
+        nf.minimumFractionDigits = 0
+        nf.maximumFractionDigits = 1
+        return nf
+    }()
+    
+    func updateCelsiusLabel() {
+        if let celsiusValue = celsiusValue {
+            celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
+        } else {
+            celsiusLabel.text = "???"
+        }
+    }
+    
+    @IBAction func fahrenheitFieldEditingChanged(_ fahrenheitField: UITextField) {
+        if let text = fahrenheitField.text, let value = Double(text) {
+            fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
+        } else {
+            fahrenheitValue = nil
+        }
+    }
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        fahrenheitField.resignFirstResponder()
     }
     
 
+
+}
+
+        
+    
     /*
     // MARK: - Navigation
 
@@ -26,4 +77,3 @@ class TemperatureViewController: UIViewController {
     }
     */
 
-}
