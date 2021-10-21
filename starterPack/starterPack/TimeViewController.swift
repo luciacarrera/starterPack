@@ -35,7 +35,7 @@ class TimeViewController: UIViewController {
         
         /* TEXT LABELS */
         visitingTimeLabel.text = "In "+visitingCity + ", it is"
-        homeTimeLabel.text = "In "+homeCity + ", it is"
+        homeTimeLabel.text = "In " + homeCity + ", it is"
         
         /* VISITING TIME AND DATE LABELS */
         // Initialization of swift date, calendar and dateformatter objects
