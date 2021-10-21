@@ -299,6 +299,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="USShirt" destination="fib-IB-hwk" id="Ieg-GN-Y7R"/>
+                        <outlet property="USShoe" destination="Wjl-R0-B2p" id="0zd-UF-vmi"/>
+                        <outlet property="USpant" destination="0S8-Pa-vwE" id="06o-DI-r1P"/>
                         <outlet property="pantsSizePicker" destination="uOp-Js-z6x" id="Fa2-hN-jV8"/>
                         <outlet property="shirtSizePicker" destination="YWM-yJ-aSH" id="ULw-dW-WlZ"/>
                         <outlet property="shoeSizePicker" destination="J3Q-U1-1MB" id="mC3-Av-vGE"/>
