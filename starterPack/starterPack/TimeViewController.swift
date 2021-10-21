@@ -62,19 +62,37 @@ class TimeViewController: UIViewController {
         homeDate.text = hDate
 
         /* DIFFERENCE LABEL */
-        // getting hours to do the math
-        let hHour = Int(hTime.prefix(2))
-        let vHour = Int(vTime.prefix(2))
+        // initialization of var to print out
+        var timeDifferenceString = ""
+
+        // getting hours to do the math optional binding
+        if let hHour = Int(hTime.prefix(2)), let vHour = Int(vTime.prefix(2)){
+            // math part
+            var diff = 0
+            if hDate > vDate{
+                diff = hHour - vHour
+            }else{
+                diff = vHour - hHour
+            }
+            var diffStr = ""
+            
+            //first compare dates
+            
+            // determine if ahead or behind
+            if diff >= 0 {
+                diffStr = "ahead"
+            } else{
+                diffStr = "behind"
+            }
+            // string to print out
+            timeDifferenceString = homeCity + " is " + String(abs(diff)) + " hours " + diffStr
+            
+        }else{
+            timeDifferenceString = "error"
+        }
         
-        /* math part
-        let diff = hHour - vHour
-        var diffStr = ""
-        if diff
+        timeDifference.text = timeDifferenceString
         
-        timeDifference.text = homeCity + " is "
-        
-       Initialization of home countries time
-         */ 
     }
     
 
