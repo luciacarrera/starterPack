@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -219,117 +218,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="Ot6-XC-2Xm">
-                                <rect key="frame" x="8" y="8" width="398" height="792"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="toW-Wy-P9T">
+                                <rect key="frame" x="10" y="10" width="394" height="788"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UK -&gt; USA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yd7-ca-cLj">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="76.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pDk-Of-wPR">
-                                        <rect key="frame" x="0.0" y="238.5" width="398" height="76.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4A-FL-ODO">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="262.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-Gv-tlZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="76.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-Q8-X4N">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="262.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whC-Bx-GiV">
-                                                <rect key="frame" x="55.5" y="0.0" width="277.5" height="76.5"/>
-                                                <menu key="menu" title="Shoe Size" id="jiq-QW-LY8">
-                                                    <children>
-                                                        <command title="UK 4" id="YV1-wE-UIk"/>
-                                                        <command title="UK 6" id="HSU-7h-3fS"/>
-                                                        <command title="UK 8" id="iaV-jt-epU"/>
-                                                        <command title="UK  10" id="Vco-lc-p3k"/>
-                                                    </children>
-                                                </menu>
-                                                <state key="normal" title="Size"/>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZZ-LV-2fk">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="76.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <pickerView tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="J3Q-U1-1MB">
+                                                <rect key="frame" x="68" y="0.0" width="213.5" height="262.5"/>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjl-R0-B2p">
+                                                <rect key="frame" x="281.5" y="0.0" width="112.5" height="262.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6bP-mM-LOv">
-                                        <rect key="frame" x="0.0" y="477" width="398" height="76.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-E5-Zth">
+                                        <rect key="frame" x="0.0" y="262.5" width="394" height="263"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xj-3c-RdJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="76.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZf-cU-EkT">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="263"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-6o-ncj">
-                                                <rect key="frame" x="51" y="0.0" width="282" height="76.5"/>
-                                                <menu key="menu" title="UK pants size" id="4PQ-We-joW">
-                                                    <children>
-                                                        <command title="28" id="NMc-5J-rgH"/>
-                                                        <command title="30" id="Keg-XI-DqN"/>
-                                                    </children>
-                                                </menu>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZH-cY-GhD">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="76.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <pickerView tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="uOp-Js-z6x">
+                                                <rect key="frame" x="68" y="0.0" width="213.5" height="263"/>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S8-Pa-vwE">
+                                                <rect key="frame" x="281.5" y="0.0" width="112.5" height="263"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tQn-cd-h0o">
-                                        <rect key="frame" x="0.0" y="715.5" width="398" height="76.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0M-Bh-F1q">
+                                        <rect key="frame" x="0.0" y="525.5" width="394" height="262.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shirts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1h-7h-ZY0">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="76.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shirts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRA-8F-sLM">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="262.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="our-bB-l7B">
-                                                <rect key="frame" x="52.5" y="0.0" width="280.5" height="76.5"/>
-                                                <menu key="menu" title="UK shirt size" id="J8W-Zr-hIo">
-                                                    <children>
-                                                        <command title="10" id="BHM-2n-tyM"/>
-                                                        <command title="12" id="lIG-SX-jXW"/>
-                                                    </children>
-                                                </menu>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-kb-7nX">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="76.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <pickerView tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-yJ-aSH">
+                                                <rect key="frame" x="68" y="0.0" width="213.5" height="262.5"/>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fib-IB-hwk">
+                                                <rect key="frame" x="281.5" y="0.0" width="112.5" height="262.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="uOp-Js-z6x" firstAttribute="leading" secondItem="YWM-yJ-aSH" secondAttribute="leading" id="hPi-ph-34C"/>
+                                    <constraint firstItem="J3Q-U1-1MB" firstAttribute="leading" secondItem="uOp-Js-z6x" secondAttribute="leading" id="qwO-th-6UM"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nRS-dY-idK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Ot6-XC-2Xm" firstAttribute="top" secondItem="nRS-dY-idK" secondAttribute="top" constant="8" id="4MD-2M-xwF"/>
-                            <constraint firstItem="nRS-dY-idK" firstAttribute="trailing" secondItem="Ot6-XC-2Xm" secondAttribute="trailing" constant="8" id="ECO-5Q-yJG"/>
-                            <constraint firstItem="Ot6-XC-2Xm" firstAttribute="leading" secondItem="nRS-dY-idK" secondAttribute="leading" constant="8" id="KpY-9Q-4U4"/>
-                            <constraint firstItem="nRS-dY-idK" firstAttribute="bottom" secondItem="Ot6-XC-2Xm" secondAttribute="bottom" constant="8" id="LGr-eW-lxa"/>
+                            <constraint firstItem="nRS-dY-idK" firstAttribute="trailing" secondItem="toW-Wy-P9T" secondAttribute="trailing" constant="10" id="KHQ-3i-OYP"/>
+                            <constraint firstItem="toW-Wy-P9T" firstAttribute="leading" secondItem="nRS-dY-idK" secondAttribute="leading" constant="10" id="ey2-0N-doo"/>
+                            <constraint firstItem="nRS-dY-idK" firstAttribute="bottom" secondItem="toW-Wy-P9T" secondAttribute="bottom" constant="10" id="nt4-hI-BCj"/>
+                            <constraint firstItem="toW-Wy-P9T" firstAttribute="top" secondItem="nRS-dY-idK" secondAttribute="top" constant="10" id="reA-6S-6RJ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="USPantSize" destination="HZH-cY-GhD" id="ida-ZK-X79"/>
-                        <outlet property="USShirtSize" destination="Ej4-kb-7nX" id="Gn6-8J-hte"/>
-                        <outlet property="USShoeSize" destination="PZZ-LV-2fk" id="vVu-lO-Xab"/>
-                        <outlet property="shoeSizeSelector" destination="whC-Bx-GiV" id="NOP-fT-GhA"/>
-                        <outletCollection property="pantsSizeSelector" destination="4PQ-We-joW" collectionClass="NSMutableArray" id="h6k-0a-sjp"/>
-                        <outletCollection property="shirtSizeSelector" destination="J8W-Zr-hIo" collectionClass="NSMutableArray" id="sUl-Gx-o5C"/>
+                        <outlet property="pantsSizePicker" destination="uOp-Js-z6x" id="Fa2-hN-jV8"/>
+                        <outlet property="shirtSizePicker" destination="YWM-yJ-aSH" id="ULw-dW-WlZ"/>
+                        <outlet property="shoeSizePicker" destination="J3Q-U1-1MB" id="mC3-Av-vGE"/>
+                        <outlet property="view" destination="Q67-8E-R0m" id="h2s-sz-CNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PG-I2-RAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
