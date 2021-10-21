@@ -34,8 +34,10 @@ class TimeViewController: UIViewController {
         let homeTimeZone = "CEST"
         
         /* TEXT LABELS */
-        visitingTimeLabel.text = "In "+visitingCity + ", it is"
-        homeTimeLabel.text = "In " + homeCity + ", it is"
+        var str = "In " + visitingCity + ", it is"
+        visitingTimeLabel.text = str
+        str = "In "+homeCity + ", it is"
+        homeTimeLabel.text = str
         
         /* VISITING TIME AND DATE LABELS */
         // Initialization of swift date, calendar and dateformatter objects
@@ -69,7 +71,7 @@ class TimeViewController: UIViewController {
         if let hHour = Int(hTime.prefix(2)), let vHour = Int(vTime.prefix(2)){
             // math part
             var diff = 0
-            if hDate > vDate{
+            if hDate > vDate && hHour < vHour{
                 diff = hHour - vHour
             }else{
                 diff = vHour - hHour
