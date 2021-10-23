@@ -22,64 +22,64 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-7n-TOe">
-                                <rect key="frame" x="30" y="248.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="30" y="248.5" width="36" height="30"/>
+                                <state key="normal" title="temp"/>
                                 <connections>
                                     <segue destination="PGg-BK-K4z" kind="showDetail" id="Xe0-2G-yWL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvK-7x-i8b">
-                                <rect key="frame" x="164.5" y="248.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="172.5" y="248.5" width="30" height="30"/>
+                                <state key="normal" title="time"/>
                                 <connections>
                                     <segue destination="nns-ci-e4i" kind="showDetail" id="5p7-y4-MHP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-JR-ODm">
-                                <rect key="frame" x="299" y="248.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="315" y="248.5" width="30" height="30"/>
+                                <state key="normal" title="$$$"/>
                                 <connections>
                                     <segue destination="qEe-Hp-oMV" kind="showDetail" id="ySp-eL-N6U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MR-jF-r6I">
-                                <rect key="frame" x="30" y="433" width="46" height="23"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="2" y="430" width="102" height="30"/>
+                                <state key="normal" title="measurements"/>
                                 <connections>
                                     <segue destination="v7J-Jx-DDG" kind="showDetail" id="hHT-NW-uYA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-Xh-PtH">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="167" y="318.5" width="41" height="30"/>
+                                <state key="normal" title="traffic"/>
                                 <connections>
                                     <segue destination="raR-NU-WTg" kind="presentation" id="oKH-rP-3UP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-eH-zSv">
-                                <rect key="frame" x="299" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="289" y="318.5" width="56" height="30"/>
+                                <state key="normal" title="clothing"/>
                                 <connections>
                                     <segue destination="rBY-Qi-fCc" kind="showDetail" id="yWY-Co-DPb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-U9-jWW">
-                                <rect key="frame" x="30" y="388.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="30" y="388.5" width="55" height="30"/>
+                                <state key="normal" title="phrases"/>
                                 <connections>
                                     <segue destination="9ic-bn-VeZ" kind="showDetail" id="QdC-Bf-lMG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-IG-r8W">
-                                <rect key="frame" x="164.5" y="388.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="157.5" y="388.5" width="60" height="30"/>
+                                <state key="normal" title="translate"/>
                                 <connections>
                                     <segue destination="Z4e-UA-XIl" kind="showDetail" id="HFC-aV-vPx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64c-WO-XiD">
-                                <rect key="frame" x="299" y="388.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="315" y="388.5" width="30" height="30"/>
+                                <state key="normal" title="911"/>
                                 <connections>
                                     <segue destination="r0a-dm-Tdt" kind="showDetail" id="aWj-JZ-SNq"/>
                                 </connections>
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="84.375"/>
+            <point key="canvasLocation" x="-23.199999999999999" y="84.107946026986511"/>
         </scene>
         <!--Measurement View Controller-->
         <scene sceneID="Eid-Bz-6zA">

@@ -27,7 +27,5 @@ class ViewController: UIViewController {
     @IBOutlet var translateButton: UIButton!
     @IBOutlet var emergencyButton: UIButton!
 
-
-
 }
 
