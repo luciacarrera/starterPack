@@ -16,7 +16,7 @@ class CurrencyViewController: UIViewController {
             updateEuroText()
         }
     }
-    var euroValue: Decimal? {
+    var euroValue: Measurement<Unit>? {
         didSet {
             updateDollarText()
         }
@@ -32,7 +32,7 @@ class CurrencyViewController: UIViewController {
         if let text = textField.text, let value = Double(text) {
             dollarTextField.text = String(value * 1.164)
         } else {
-            dollarValue = nil
+            dollarTextField.text = "???"
         }
     }
     
