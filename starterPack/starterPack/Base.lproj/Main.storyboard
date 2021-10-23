@@ -158,13 +158,47 @@
                     <view key="view" contentMode="scaleToFill" id="CCE-cS-zoc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVQ-dg-Anf">
+                                <rect key="frame" x="169" y="138" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spv-cQ-sVm">
+                                <rect key="frame" x="179.5" y="352" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJE-cc-aGv">
+                                <rect key="frame" x="125" y="404" width="164" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXT-9g-Abn">
+                                <rect key="frame" x="125" y="181" width="164" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="n5E-w9-ccJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xVQ-dg-Anf" firstAttribute="top" secondItem="n5E-w9-ccJ" secondAttribute="top" constant="138" id="1H5-8T-ahI"/>
+                            <constraint firstItem="QXT-9g-Abn" firstAttribute="top" secondItem="xVQ-dg-Anf" secondAttribute="bottom" constant="22" id="2GA-a8-gzQ"/>
+                            <constraint firstItem="EJE-cc-aGv" firstAttribute="top" secondItem="Spv-cQ-sVm" secondAttribute="bottom" constant="31" id="74l-YW-hIi"/>
+                            <constraint firstItem="EJE-cc-aGv" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="H3n-Jh-XIP"/>
+                            <constraint firstItem="xVQ-dg-Anf" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="QJs-Zu-hSo"/>
+                            <constraint firstItem="Spv-cQ-sVm" firstAttribute="top" secondItem="QXT-9g-Abn" secondAttribute="bottom" constant="137" id="RSX-2Q-KyR"/>
+                            <constraint firstItem="QXT-9g-Abn" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="hhx-Oy-DCh"/>
+                            <constraint firstItem="Spv-cQ-sVm" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="wj0-Or-R23"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFc-dd-8GN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1359" y="1135"/>
+            <point key="canvasLocation" x="-1359.4202898550725" y="1134.375"/>
         </scene>
         <!--Currency View Controller-->
         <scene sceneID="Hmm-Zi-qvO">
