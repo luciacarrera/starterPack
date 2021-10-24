@@ -20,9 +20,6 @@ class TimeViewController: UIViewController {
     
     // labels - time difference
     @IBOutlet var timeDifference: UILabel!
-
-    //buttons
-    @IBOutlet var exit: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +55,7 @@ class TimeViewController: UIViewController {
         
         /* HOME TIME AND DATE LABELS */
         timeFormatter.timeZone = TimeZone(abbreviation: homeTimeZone)
+        dateFormatter.timeZone = TimeZone(abbreviation: homeTimeZone)
         let hTime = timeFormatter.string(from: date).lowercased()
         let hDate = dateFormatter.string(from: date)
         homeTime.text = hTime
@@ -71,7 +69,12 @@ class TimeViewController: UIViewController {
         if let hHour = Int(hTime.prefix(2)), let vHour = Int(vTime.prefix(2)){
             // math part
             var diff = 0
-            if hDate > vDate && hHour < vHour{
+            if hDate > vDate{
+                diff = 24 - vHour + hHour
+            }else if vDate > hDate{
+                diff = 24 - hHour + vHour
+            }
+            else if hHour < vHour{
                 diff = hHour - vHour
             }else{
                 diff = vHour - hHour
