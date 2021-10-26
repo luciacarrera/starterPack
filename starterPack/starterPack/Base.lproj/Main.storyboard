@@ -494,22 +494,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="Ot6-XC-2Xm">
-                                <rect key="frame" x="8" y="8" width="398" height="792"/>
+                                <rect key="frame" x="15" y="30" width="384" height="782"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pDk-Of-wPR">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="156"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="152.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-Gv-tlZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="156"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="152.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="12a-c3-Ucq">
-                                                <rect key="frame" x="55.5" y="0.0" width="277.5" height="156"/>
+                                                <rect key="frame" x="55.5" y="0.0" width="263.5" height="152.5"/>
                                             </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZZ-LV-2fk">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="156"/>
+                                                <rect key="frame" x="327" y="0.0" width="57" height="152.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -517,19 +517,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6bP-mM-LOv">
-                                        <rect key="frame" x="0.0" y="318" width="398" height="156"/>
+                                        <rect key="frame" x="0.0" y="314.5" width="384" height="153"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xj-3c-RdJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="156"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="153"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="9dy-nO-qNe">
-                                                <rect key="frame" x="51" y="0.0" width="282" height="156"/>
+                                                <rect key="frame" x="51" y="0.0" width="268" height="153"/>
                                             </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZH-cY-GhD">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="156"/>
+                                                <rect key="frame" x="327" y="0.0" width="57" height="153"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -537,19 +537,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tQn-cd-h0o">
-                                        <rect key="frame" x="0.0" y="636" width="398" height="156"/>
+                                        <rect key="frame" x="0.0" y="629.5" width="384" height="152.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shirts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1h-7h-ZY0">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="156"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="152.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-Z0-JN6">
-                                                <rect key="frame" x="52.5" y="0.0" width="280.5" height="156"/>
+                                                <rect key="frame" x="52.5" y="0.0" width="266.5" height="152.5"/>
                                             </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-kb-7nX">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="156"/>
+                                                <rect key="frame" x="327" y="0.0" width="57" height="152.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -562,10 +562,10 @@
                         <viewLayoutGuide key="safeArea" id="nRS-dY-idK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ot6-XC-2Xm" firstAttribute="top" secondItem="nRS-dY-idK" secondAttribute="top" constant="8" id="4MD-2M-xwF"/>
-                            <constraint firstItem="nRS-dY-idK" firstAttribute="trailing" secondItem="Ot6-XC-2Xm" secondAttribute="trailing" constant="8" id="ECO-5Q-yJG"/>
-                            <constraint firstItem="Ot6-XC-2Xm" firstAttribute="leading" secondItem="nRS-dY-idK" secondAttribute="leading" constant="8" id="KpY-9Q-4U4"/>
-                            <constraint firstItem="nRS-dY-idK" firstAttribute="bottom" secondItem="Ot6-XC-2Xm" secondAttribute="bottom" constant="8" id="LGr-eW-lxa"/>
+                            <constraint firstItem="Ot6-XC-2Xm" firstAttribute="leading" secondItem="nRS-dY-idK" secondAttribute="leading" constant="15" id="7y5-nb-qzm"/>
+                            <constraint firstAttribute="trailing" secondItem="Ot6-XC-2Xm" secondAttribute="trailing" constant="15" id="Obg-gk-1ec"/>
+                            <constraint firstItem="Ot6-XC-2Xm" firstAttribute="top" secondItem="nRS-dY-idK" secondAttribute="top" constant="30" id="Pjq-AQ-flE"/>
+                            <constraint firstAttribute="bottom" secondItem="Ot6-XC-2Xm" secondAttribute="bottom" constant="30" id="v9N-mt-zvl"/>
                         </constraints>
                     </view>
                     <connections>
