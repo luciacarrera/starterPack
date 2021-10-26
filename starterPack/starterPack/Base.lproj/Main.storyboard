@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -485,27 +485,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="Ot6-XC-2Xm">
                                 <rect key="frame" x="8" y="8" width="398" height="792"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UK -&gt; USA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yd7-ca-cLj">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="76.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pDk-Of-wPR">
-                                        <rect key="frame" x="0.0" y="238.5" width="398" height="76.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="156"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-Gv-tlZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="76.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="156"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whC-Bx-GiV">
-                                                <rect key="frame" x="55.5" y="0.0" width="277.5" height="76.5"/>
-                                                <state key="normal" title="Size"/>
-                                            </button>
+                                            <pickerView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="12a-c3-Ucq">
+                                                <rect key="frame" x="56" y="0.0" width="277" height="156"/>
+                                            </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZZ-LV-2fk">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="76.5"/>
+                                                <rect key="frame" x="341" y="0.0" width="57" height="156"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -513,20 +506,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6bP-mM-LOv">
-                                        <rect key="frame" x="0.0" y="477" width="398" height="76.5"/>
+                                        <rect key="frame" x="0.0" y="318" width="398" height="156"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xj-3c-RdJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="76.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="156"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-6o-ncj">
-                                                <rect key="frame" x="51" y="0.0" width="282" height="76.5"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
+                                            <pickerView tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="9dy-nO-qNe">
+                                                <rect key="frame" x="51" y="0.0" width="282" height="156"/>
+                                            </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZH-cY-GhD">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="76.5"/>
+                                                <rect key="frame" x="341" y="0.0" width="57" height="156"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -534,20 +526,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tQn-cd-h0o">
-                                        <rect key="frame" x="0.0" y="715.5" width="398" height="76.5"/>
+                                        <rect key="frame" x="0.0" y="636" width="398" height="156"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shirts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1h-7h-ZY0">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="76.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="156"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="our-bB-l7B">
-                                                <rect key="frame" x="52.5" y="0.0" width="280.5" height="76.5"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
+                                            <pickerView tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-Z0-JN6">
+                                                <rect key="frame" x="53" y="0.0" width="280" height="156"/>
+                                            </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-kb-7nX">
-                                                <rect key="frame" x="341" y="0.0" width="57" height="76.5"/>
+                                                <rect key="frame" x="341" y="0.0" width="57" height="156"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -570,7 +561,9 @@
                         <outlet property="USPantSize" destination="HZH-cY-GhD" id="ida-ZK-X79"/>
                         <outlet property="USShirtSize" destination="Ej4-kb-7nX" id="Gn6-8J-hte"/>
                         <outlet property="USShoeSize" destination="PZZ-LV-2fk" id="vVu-lO-Xab"/>
-                        <outlet property="shoeSizeSelector" destination="whC-Bx-GiV" id="NOP-fT-GhA"/>
+                        <outlet property="pantPicker" destination="9dy-nO-qNe" id="fvu-87-dn9"/>
+                        <outlet property="shirtPicker" destination="K7G-Z0-JN6" id="d8R-cm-myG"/>
+                        <outlet property="shoePicker" destination="12a-c3-Ucq" id="xbM-zs-MAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PG-I2-RAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
