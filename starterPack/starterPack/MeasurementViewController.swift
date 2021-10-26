@@ -50,10 +50,10 @@ class MeasurementViewController: UIViewController {
         
         return conv_val
     }
-    
+
     func updateToField() {
         if let x =  Double(fromField.text!) {
-            toField.text = String(convert(x, from_type, to_type, conv_type)) //= convert(x, from_type, to_type, conv_type)
+            toField.text = String(format:"%.2f", convert(x, from_type, to_type, conv_type)) //= convert(x, from_type, to_type, conv_type)
         } else {
             toField.text = "???"
         }
@@ -62,7 +62,7 @@ class MeasurementViewController: UIViewController {
     func updateFromField() {
         print("from updated")
         if let x =  Double(toField.text!) {
-            fromField.text = String(convert(x, from_type, to_type, conv_type))
+            fromField.text = String(format:"%.2f", convert(x, from_type, to_type, conv_type))
         } else {
             fromField.text = "???"
         }
