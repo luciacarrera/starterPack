@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CurrencyViewController: UIViewController {
+class CurrencyViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var euroTextField: UITextField!
     @IBOutlet var dollarTextField: UITextField!
@@ -30,17 +30,17 @@ class CurrencyViewController: UIViewController {
     
     @IBAction func dollarFieldEditingChanged(_ textField: UITextField) {
         if let text = textField.text, let value = Double(text) {
-            dollarTextField.text = String(value * 1.164)
+            dollarTextField.text = numberFormatter.string(from: NSNumber(value: value * 1.164))
         } else {
-            dollarTextField.text = "???"
+            dollarTextField.text = ""
         }
     }
     
     @IBAction func euroFieldEditingChanged(_ textField: UITextField) {
         if let text = textField.text, let value = Double(text){
-            euroTextField.text = String(value * 0.859)
+            euroTextField.text = numberFormatter.string(from: NSNumber(value: value * 0.859))
         } else {
-            euroTextField.text = "???"
+            euroTextField.text = ""
         }
     }
     
@@ -53,7 +53,7 @@ class CurrencyViewController: UIViewController {
         if let euroValue = euroValue {
             euroTextField.text = "\(euroValue)"
         } else {
-            euroTextField.text = "???"
+            euroTextField.text = ""
         }
     }
     
@@ -61,16 +61,27 @@ class CurrencyViewController: UIViewController {
         if let dollarValue = dollarValue {
             dollarTextField.text = "\(dollarValue)"
         } else {
-            dollarTextField.text = "???"
+            dollarTextField.text = ""
         }
     }
     
-//    let numberFormatter: NumberFormatter = {
-//        let nf = NumberFormatter()
-//        nf.numberStyle = .decimal
-//        nf.minimumFractionDigits = 0
-//        nf.maximumFractionDigits = 1
-//        return nf
-//    }
+    let numberFormatter: NumberFormatter = {
+        let nf = NumberFormatter()
+        nf.numberStyle = .decimal
+        nf.minimumFractionDigits = 2
+        nf.maximumFractionDigits = 2
+        return nf
+    }()
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
+        let replacementTextHasDecimalSeparator = string.range(of: ".")
+
+        if existingTextHasDecimalSeparator != nil, replacementTextHasDecimalSeparator != nil {
+            return false
+        } else {
+            return true
+        }
+    }
 
 }
