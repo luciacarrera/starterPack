@@ -154,11 +154,14 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12" placeholder="32" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYa-3x-9Rh" userLabel="fromLabel">
                                 <rect key="frame" x="100" y="113" width="65" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="T8H-Xj-rVq"/>
+                                </constraints>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="fahrenheitFieldEditingChanged:" destination="PGg-BK-K4z" eventType="editingChanged" id="FNm-WB-MMT"/>
+                                    <action selector="fromFieldEditingChanged:" destination="v7J-Jx-DDG" eventType="editingChanged" id="kQd-vR-uOb"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" placeholder="39.37" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w6o-hK-6h0" userLabel="toLabel">
@@ -167,7 +170,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="fahrenheitFieldEditingChanged:" destination="PGg-BK-K4z" eventType="editingChanged" id="sUr-yk-IId"/>
+                                    <action selector="toFieldEditingChanged:" destination="v7J-Jx-DDG" eventType="editingChanged" id="PrD-II-dE1"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -190,6 +193,12 @@
                             <constraint firstItem="eLz-TL-4de" firstAttribute="leading" secondItem="7GY-4R-DQQ" secondAttribute="leading" constant="33" id="ygP-UL-1jX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fromField" destination="kYa-3x-9Rh" id="kDw-XB-x7b"/>
+                        <outlet property="fromLabel" destination="I16-8q-bN2" id="Nae-Dz-VC5"/>
+                        <outlet property="toField" destination="w6o-hK-6h0" id="ywi-wa-THk"/>
+                        <outlet property="toLabel" destination="2SD-zy-cws" id="HdO-CO-A5Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eor-b7-xrV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
