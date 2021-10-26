@@ -7,6 +7,9 @@
 
 import UIKit
 
+// TODO make whole shoe sizes display without .0
+// establish view so compnents dont move when they get change length
+
 class ClothingViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -60,6 +63,17 @@ extension ClothingViewController: UIPickerViewDataSource {
         }
         else {
             return 0
+        }
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView.tag == 1 {
+            USShoeSize.text = String(shoeSizeConversions[ukShoes[row]]!)
+        }
+        else if pickerView.tag == 2 {
+            USPantSize.text = String(pantSizeConversions[ukPants[row]]!)
+        }
+        else if pickerView.tag == 3 {
+            USShirtSize.text = shirtSizeConversions[ukShirts[row]]
         }
     }
     
