@@ -24,6 +24,7 @@
 		9BC777A427187AC000D4BCC8 /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */; };
 		9BC777A927187ACE00D4BCC8 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777A827187ACE00D4BCC8 /* TranslateViewController.swift */; };
 		9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */; };
+		9E275421273C6E5700EFD3D4 /* profilesetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesViewController.swift; sourceTree = "<group>"; };
 		9BC777A827187ACE00D4BCC8 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				9B4391872715D73800DC0A49 /* AppDelegate.swift */,
 				9B4391892715D73800DC0A49 /* SceneDelegate.swift */,
 				9B43918B2715D73800DC0A49 /* ViewController.swift */,
+				9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */,
 				9B43918D2715D73800DC0A49 /* Main.storyboard */,
 				9BC7778527187A7B00D4BCC8 /* TemperatureViewController.swift */,
 				9BC7778A27187A8C00D4BCC8 /* TimeViewController.swift */,
@@ -287,6 +290,7 @@
 			files = (
 				9B43918C2715D73800DC0A49 /* ViewController.swift in Sources */,
 				9BC7779027187A9600D4BCC8 /* CurrencyViewController.swift in Sources */,
+				9E275421273C6E5700EFD3D4 /* profilesetupViewController.swift in Sources */,
 				9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */,
 				9BC7778B27187A8C00D4BCC8 /* TimeViewController.swift in Sources */,
 				9B4391882715D73800DC0A49 /* AppDelegate.swift in Sources */,
