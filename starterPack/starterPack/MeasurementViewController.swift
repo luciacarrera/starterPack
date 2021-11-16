@@ -7,19 +7,37 @@
 
 import UIKit
 
-class MeasurementViewController: UIViewController {
+class MeasurementViewController: UIViewController, UIPickerViewDelegate {
+    
+    let conversion_keys: [String:String] = ["length": "ft"]
+    let conversions = ["length": [["ft":1.0, "meter":0.3048, "centimeter":0.0328084, "mile":0.000189394, "inch":12, "yard":0.3333]]]
     
     @IBOutlet var fromField: UITextField!
     @IBOutlet var fromLabel: UILabel!
     @IBOutlet var toField: UITextField!
     @IBOutlet var toLabel: UILabel!
+    
+    var currentConversion = "length"
+    
+    @IBOutlet var fromPicker: UIPickerView!
+    @IBOutlet var toPicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        toPicker.dataSource = self
+        toPicker.delegate = self
+        
+        fromPicker.dataSource = self
+        fromPicker.delegate = self
+        
+        toPicker.tag = 1
+        fromPicker.tag = 2
     }
-    let conversion_keys: [String:String] = ["length": "ft"]
-    let conversions = ["length": [["ft":1.0, "meter":0.3048, "centimeter":0.0328084, "mile":0.000189394, "inch":12, "yard":0.3333]]]
+    
+
     
     var conv_type = "length"
 
@@ -106,3 +124,41 @@ class MeasurementViewController: UIViewController {
     */
 
 }
+
+extension MeasurementViewController: UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return Array(conversions[currentConversion]![0].keys).count
+    }
+    
+    // The data to return fopr the row and component (column) that's being passed in
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        //to
+        if pickerView.tag == 1 {
+            to_type = String(Array(conversions[currentConversion]![0].keys)[row])
+            toLabel.text = String(Array(conversions[currentConversion]![0].keys)[row])
+            print(to_type)
+            return String(Array(conversions[currentConversion]![0].keys)[row])
+        }
+        //from
+        else if pickerView.tag == 2 {
+            from_type = String(Array(conversions[currentConversion]![0].keys)[row])
+            fromLabel.text = String(Array(conversions[currentConversion]![0].keys)[row])
+            print(from_type)
+            return String(Array(conversions[currentConversion]![0].keys)[row])
+        }
+        else {
+            return "???"
+        }
+    }
+}
+
+/**
+ (Array(conversions[currentConversion]![0].keys)[row])
+ */
