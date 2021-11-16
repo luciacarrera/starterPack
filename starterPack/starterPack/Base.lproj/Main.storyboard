@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -162,13 +162,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to StarterPack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imh-2G-cgy">
-                                <rect key="frame" x="33" y="134" width="348" height="41"/>
+                                <rect key="frame" x="48" y="134" width="318.5" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us about yourself" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm0-vM-Rwb">
-                                <rect key="frame" x="126.5" y="183" width="161.5" height="21"/>
+                                <rect key="frame" x="126.5" y="179" width="161.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -410,44 +410,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVQ-dg-Anf">
-                                <rect key="frame" x="169" y="138" width="76" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXT-9g-Abn">
+                                <rect key="frame" x="125" y="210" width="164" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-Bl-k9w">
+                                <rect key="frame" x="176" y="299" width="63" height="30"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="translateInput" destination="Z4e-UA-XIl" eventType="touchUpInside" id="Wwa-1y-OWU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-Qk-86s">
+                                <rect key="frame" x="186" y="386" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spv-cQ-sVm">
-                                <rect key="frame" x="179.5" y="352" width="55" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJE-cc-aGv">
-                                <rect key="frame" x="125" y="404" width="164" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXT-9g-Abn">
-                                <rect key="frame" x="125" y="181" width="164" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n5E-w9-ccJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="xVQ-dg-Anf" firstAttribute="top" secondItem="n5E-w9-ccJ" secondAttribute="top" constant="138" id="1H5-8T-ahI"/>
-                            <constraint firstItem="QXT-9g-Abn" firstAttribute="top" secondItem="xVQ-dg-Anf" secondAttribute="bottom" constant="22" id="2GA-a8-gzQ"/>
-                            <constraint firstItem="EJE-cc-aGv" firstAttribute="top" secondItem="Spv-cQ-sVm" secondAttribute="bottom" constant="31" id="74l-YW-hIi"/>
-                            <constraint firstItem="EJE-cc-aGv" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="H3n-Jh-XIP"/>
-                            <constraint firstItem="xVQ-dg-Anf" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="QJs-Zu-hSo"/>
-                            <constraint firstItem="Spv-cQ-sVm" firstAttribute="top" secondItem="QXT-9g-Abn" secondAttribute="bottom" constant="137" id="RSX-2Q-KyR"/>
-                            <constraint firstItem="QXT-9g-Abn" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="hhx-Oy-DCh"/>
-                            <constraint firstItem="Spv-cQ-sVm" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="wj0-Or-R23"/>
+                            <constraint firstItem="ddA-Bl-k9w" firstAttribute="leading" secondItem="n5E-w9-ccJ" secondAttribute="leading" constant="176" id="7BT-8E-cG1"/>
+                            <constraint firstItem="QXT-9g-Abn" firstAttribute="centerX" secondItem="ddA-Bl-k9w" secondAttribute="centerX" id="OZT-6Y-ht2"/>
+                            <constraint firstItem="QXT-9g-Abn" firstAttribute="centerX" secondItem="CCE-cS-zoc" secondAttribute="centerX" id="PIU-B8-ExE"/>
+                            <constraint firstItem="ddA-Bl-k9w" firstAttribute="top" secondItem="QXT-9g-Abn" secondAttribute="bottom" constant="55" id="RSi-CD-tXE"/>
+                            <constraint firstItem="QXT-9g-Abn" firstAttribute="top" secondItem="n5E-w9-ccJ" secondAttribute="top" constant="210" id="U8Z-RU-fuJ"/>
+                            <constraint firstItem="QXT-9g-Abn" firstAttribute="leading" secondItem="n5E-w9-ccJ" secondAttribute="leading" constant="125" id="mSX-hA-Wtl"/>
+                            <constraint firstItem="ddA-Bl-k9w" firstAttribute="centerX" secondItem="Msm-Qk-86s" secondAttribute="centerX" id="oqa-bC-eJb"/>
+                            <constraint firstItem="Msm-Qk-86s" firstAttribute="top" secondItem="ddA-Bl-k9w" secondAttribute="bottom" constant="57" id="vr4-KQ-MFE"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ztj-vX-Ogr" appends="YES" id="Fly-N1-gwG"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="QXT-9g-Abn" id="KOh-lL-xmz"/>
+                        <outlet property="transLabel" destination="Msm-Qk-86s" id="h1u-ks-uhe"/>
+                        <outlet property="translateButton" destination="ddA-Bl-k9w" id="4LH-Ar-Z28"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFc-dd-8GN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ztj-vX-Ogr">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="Z4e-UA-XIl" id="Lqe-RQ-L7I"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1359.4202898550725" y="1134.375"/>
         </scene>
