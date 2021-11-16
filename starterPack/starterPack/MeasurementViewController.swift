@@ -9,13 +9,16 @@ import UIKit
 
 class MeasurementViewController: UIViewController, UIPickerViewDelegate {
     
-    let conversion_keys: [String:String] = ["length": "ft"]
-    let conversions = ["length": [["ft":1.0, "meter":0.3048, "centimeter":0.0328084, "mile":0.000189394, "inch":12, "yard":0.3333]]]
+    let conversion_keys: [String:String] = ["length": "ft", "weight":"kg"]
+    let conversions = ["length": [["ft":1.0, "meter":0.3048, "centimeter":0.0328084, "mile":0.000189394, "inch":12, "yard":0.3333]], "weight":[["kg":1.0, "g":1000.00, "mg":10000.00]]]
     
     @IBOutlet var fromField: UITextField!
     @IBOutlet var fromLabel: UILabel!
     @IBOutlet var toField: UITextField!
     @IBOutlet var toLabel: UILabel!
+    
+    @IBOutlet var lengthButton: UIButton!
+    @IBOutlet var weightButton:UIButton!
     
     var currentConversion = "length"
     
@@ -86,6 +89,30 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
         }
     }
     
+    @IBAction func changeToLength(_ sender: Any) {
+        currentConversion = "length"
+        updateAll()
+    }
+    
+    @IBAction func changeToWeight(_ sender: Any) {
+        currentConversion = "weight"
+        updateAll()
+    }
+    
+    func updateAll(){
+        fromPicker.reloadAllComponents()
+        toPicker.reloadAllComponents()
+        if let text = fromField.text, let value = Double(text) {
+            fromValue = convert(value, to_type, from_type, conv_type)
+        } else {
+            fromValue = 0
+        }
+        if let text = toField.text, let value = Double(text) {
+            toValue = convert(value, from_type, to_type, conv_type)
+        } else {
+            toValue = 0
+        }
+    }
     @IBAction func fromFieldEditingChanged(_ fromField: UITextField) {
         print("from changed")
         if let text = fromField.text, let value = Double(text) {
