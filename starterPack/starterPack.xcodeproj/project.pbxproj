@@ -26,6 +26,7 @@
 		9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */; };
 		9E275421273C6E5700EFD3D4 /* profilesetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */; };
 		F5B089492741962900499E55 /* LanguageTranslatorV3 in Frameworks */ = {isa = PBXBuildFile; productRef = F5B089482741962900499E55 /* LanguageTranslatorV3 */; };
+		B773E81A273D91520068622B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B773E819273D91520068622B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		9BC777A827187ACE00D4BCC8 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesetupViewController.swift; sourceTree = "<group>"; };
+		B773E819273D91520068622B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				9B4391902715D73C00DC0A49 /* Assets.xcassets */,
 				9B4391922715D73C00DC0A49 /* LaunchScreen.storyboard */,
 				9B4391952715D73C00DC0A49 /* Info.plist */,
+				B773E819273D91520068622B /* User.swift */,
 			);
 			path = starterPack;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */,
 				9BC7778B27187A8C00D4BCC8 /* TimeViewController.swift in Sources */,
 				9B4391882715D73800DC0A49 /* AppDelegate.swift in Sources */,
+				B773E81A273D91520068622B /* User.swift in Sources */,
 				9BC7779A27187AAA00D4BCC8 /* TrafficViewController.swift in Sources */,
 				9BC7779F27187AB500D4BCC8 /* ClothingViewController.swift in Sources */,
 				9B43918A2715D73800DC0A49 /* SceneDelegate.swift in Sources */,
