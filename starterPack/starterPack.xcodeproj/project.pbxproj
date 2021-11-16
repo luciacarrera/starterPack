@@ -25,6 +25,7 @@
 		9BC777A927187ACE00D4BCC8 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777A827187ACE00D4BCC8 /* TranslateViewController.swift */; };
 		9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */; };
 		9E275421273C6E5700EFD3D4 /* profilesetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */; };
+		F5B089492741962900499E55 /* LanguageTranslatorV3 in Frameworks */ = {isa = PBXBuildFile; productRef = F5B089482741962900499E55 /* LanguageTranslatorV3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B089492741962900499E55 /* LanguageTranslatorV3 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +176,9 @@
 			dependencies = (
 			);
 			name = starterPack;
+			packageProductDependencies = (
+				F5B089482741962900499E55 /* LanguageTranslatorV3 */,
+			);
 			productName = starterPack;
 			productReference = 9B4391842715D73800DC0A49 /* starterPack.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +250,9 @@
 				Base,
 			);
 			mainGroup = 9B43917B2715D73800DC0A49;
+			packageReferences = (
+				F5B089472741962900499E55 /* XCRemoteSwiftPackageReference "swift-sdk" */,
+			);
 			productRefGroup = 9B4391852715D73800DC0A49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -631,6 +639,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5B089472741962900499E55 /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/watson-developer-cloud/swift-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5B089482741962900499E55 /* LanguageTranslatorV3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5B089472741962900499E55 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			productName = LanguageTranslatorV3;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B43917C2715D73800DC0A49 /* Project object */;
 }
