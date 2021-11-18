@@ -15,8 +15,22 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var clothing: UITextField!
     @IBOutlet var USTimeZone: UITextField!
 
-    
-    
+    @IBAction func done(_ sender: UIButton) {
+        // check data
+        if homeCountry.text == "" || timeZone.text == "" || currency.text == "" || languge.text == "" || clothing.text == "" || USTimeZone.text == "" {
+            // if incomplete data, pop alert
+            let alertcontroller = UIAlertController(title: "Incomplete Data", message: "please fill out all fields", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alertcontroller.addAction(okAction)
+            present(alertcontroller, animated: true, completion: nil)
+        }
+        // else, run segue
+        else {
+            performSegue(withIdentifier: "userDone", sender: nil)
+        }
+            
+    }
+
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
