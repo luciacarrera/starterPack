@@ -419,7 +419,7 @@
                                 <rect key="frame" x="176" y="299" width="63" height="30"/>
                                 <state key="normal" title="Translate"/>
                                 <connections>
-                                    <action selector="translateInput" destination="Z4e-UA-XIl" eventType="touchUpInside" id="Wwa-1y-OWU"/>
+                                    <action selector="translateInput" destination="Z4e-UA-XIl" eventType="touchUpInside" id="FrS-N7-loY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-Qk-86s">
