@@ -9,6 +9,8 @@ import UIKit
 
 class CurrencyViewController: UIViewController, UITextFieldDelegate {
     
+    var user: User!
+
     @IBOutlet var euroTextField: UITextField!
     @IBOutlet var dollarTextField: UITextField!
     var dollarValue: Measurement<Unit>? {

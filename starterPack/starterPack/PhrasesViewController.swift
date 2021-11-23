@@ -10,6 +10,8 @@ import LanguageTranslatorV3
 
 class PhrasesViewController: UIViewController {
     
+    var user: User!
+    
     @IBOutlet var phraseLabel: UILabel!
     @IBOutlet var translationLabel: UILabel!
     

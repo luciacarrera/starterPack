@@ -15,6 +15,8 @@ class TemperatureViewController: UIViewController {
         updateCelsiusLabel()
     }
     
+    var user: User!
+    
     //initialize label and buttons
     @IBOutlet var fahrenheitField: UITextField!
     @IBOutlet var celsiusField: UITextField!

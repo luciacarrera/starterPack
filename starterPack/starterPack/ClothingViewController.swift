@@ -12,6 +12,8 @@ import UIKit
 
 class ClothingViewController: UIViewController {
 
+    var user: User!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -9,6 +9,9 @@ import UIKit
 
 class EmergencyViewController: UIViewController {
     
+    var user: User!
+
+    
     @IBOutlet var btn911: UIButton!
     @IBOutlet var btnPoision: UIButton!
     @IBOutlet var btnLucia: UIButton!

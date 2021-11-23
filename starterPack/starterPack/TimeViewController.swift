@@ -8,6 +8,9 @@
 import UIKit
 
 class TimeViewController: UIViewController {
+    
+    var user: User!
+
     //labels - home country
     @IBOutlet var homeTimeLabel: UILabel!
     @IBOutlet var homeTime: UILabel!
