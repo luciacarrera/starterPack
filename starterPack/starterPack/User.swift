@@ -13,22 +13,22 @@ class User: Codable{
     var homeCountry: String
     var timeZone: String
     var currency: String
-    var language: String
+    var languge: String
     var clothing: String
-    var americanTimeZone: String
+    var USTimeZone: String
     
     
-    init(homeCountry: String, timeZone: String, currency: String, language: String, clothing: String, americanTimeZone: String) {
+    init(homeCountry: String, timeZone: String, currency: String, languge: String, clothing: String, USTimezone: String) {
         self.homeCountry = homeCountry
         self.timeZone = timeZone
         self.currency = currency
-        self.language = language
+        self.languge = languge
         self.clothing = clothing
-        self.americanTimeZone = americanTimeZone
+        self.USTimeZone = USTimezone
     }
     
     convenience init() {
         // create sample item to be customized
-        self.init(homeCountry: "USA", timeZone: "", currency: "", language: "", clothing: "", americanTimeZone: "")
+        self.init(homeCountry: "USA", timeZone: "PST", currency: "USdollar", languge: "english", clothing: "USWomens", USTimezone: "EST")
     }
 }

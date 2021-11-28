@@ -6,11 +6,9 @@
 //
 
 import UIKit
-import LanguageTranslatorV3
+//import LanguageTranslatorV3
 
 class TranslateViewController: UIViewController {
-    
-    var user: User!
     
     @IBOutlet var inputTextView: UITextView!
     
