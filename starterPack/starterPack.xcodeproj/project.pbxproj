@@ -24,8 +24,8 @@
 		9BC777A427187AC000D4BCC8 /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */; };
 		9BC777AE27187AD900D4BCC8 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */; };
 		9E275421273C6E5700EFD3D4 /* profilesetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */; };
-		9EECB14E27542CF900EEAD19 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EECB14D27542CF900EEAD19 /* TranslateViewController.swift */; };
 		B773E81A273D91520068622B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B773E819273D91520068622B /* User.swift */; };
+		E061570127553FA9006CBBD4 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E061570027553FA9006CBBD4 /* TranslateViewController.swift */; };
 		F5B089492741962900499E55 /* LanguageTranslatorV3 in Frameworks */ = {isa = PBXBuildFile; productRef = F5B089482741962900499E55 /* LanguageTranslatorV3 */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +70,8 @@
 		9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesViewController.swift; sourceTree = "<group>"; };
 		9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		9E275420273C6E5700EFD3D4 /* profilesetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesetupViewController.swift; sourceTree = "<group>"; };
-		9EECB14D27542CF900EEAD19 /* TranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslateViewController.swift; path = "../../../../Downloads/starterPack-master-2/starterPack/starterPack/TranslateViewController.swift"; sourceTree = "<group>"; };
 		B773E819273D91520068622B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E061570027553FA9006CBBD4 /* TranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +123,7 @@
 		9B4391862715D73800DC0A49 /* starterPack */ = {
 			isa = PBXGroup;
 			children = (
+				E061570027553FA9006CBBD4 /* TranslateViewController.swift */,
 				9B4391872715D73800DC0A49 /* AppDelegate.swift */,
 				9B4391892715D73800DC0A49 /* SceneDelegate.swift */,
 				9B43918B2715D73800DC0A49 /* ViewController.swift */,
@@ -135,7 +136,6 @@
 				9BC7779927187AAA00D4BCC8 /* TrafficViewController.swift */,
 				9BC7779E27187AB500D4BCC8 /* ClothingViewController.swift */,
 				9BC777A327187AC000D4BCC8 /* PhrasesViewController.swift */,
-				9EECB14D27542CF900EEAD19 /* TranslateViewController.swift */,
 				9BC777AD27187AD900D4BCC8 /* EmergencyViewController.swift */,
 				9B4391902715D73C00DC0A49 /* Assets.xcassets */,
 				9B4391922715D73C00DC0A49 /* LaunchScreen.storyboard */,
@@ -312,7 +312,7 @@
 				9BC777A427187AC000D4BCC8 /* PhrasesViewController.swift in Sources */,
 				9BC7778627187A7B00D4BCC8 /* TemperatureViewController.swift in Sources */,
 				9BC7779527187A9E00D4BCC8 /* MeasurementViewController.swift in Sources */,
-				9EECB14E27542CF900EEAD19 /* TranslateViewController.swift in Sources */,
+				E061570127553FA9006CBBD4 /* TranslateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
