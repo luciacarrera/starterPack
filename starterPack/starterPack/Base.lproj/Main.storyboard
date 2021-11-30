@@ -981,37 +981,37 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Village of Grosse Pointe Shores city it is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-bG-oaf">
-                                <rect key="frame" x="0.0" y="192" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, November 24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Koh-Ic-4k3">
-                                <rect key="frame" x="0.0" y="277.5" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="165.5" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Village of Grosse Pointe Shores city it is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrs-81-hEZ">
-                                <rect key="frame" x="0.0" y="386.5" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="274.5" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, November 24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kX-iT-DiG">
-                                <rect key="frame" x="0.0" y="472" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="360" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH:mm am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caf-S9-1ac">
-                                <rect key="frame" x="0.0" y="220.5" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="108.5" width="414" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH:mm am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lD-T8-1k1">
-                                <rect key="frame" x="0.0" y="415" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="303" width="414" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1023,7 +1023,6 @@
                             <constraint firstItem="RJX-8j-wsA" firstAttribute="trailing" secondItem="KDd-bG-oaf" secondAttribute="trailing" id="0vp-iR-ucF"/>
                             <constraint firstAttribute="rightMargin" secondItem="2kX-iT-DiG" secondAttribute="right" constant="-20" id="4Dg-qe-6qe"/>
                             <constraint firstItem="Koh-Ic-4k3" firstAttribute="top" secondItem="caf-S9-1ac" secondAttribute="bottom" constant="8" id="4uW-3o-vmp"/>
-                            <constraint firstItem="KDd-bG-oaf" firstAttribute="top" secondItem="VzQ-dt-USy" secondAttribute="topMargin" constant="192" id="8JN-uF-iBx"/>
                             <constraint firstItem="Koh-Ic-4k3" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="ABB-14-lTT"/>
                             <constraint firstItem="Hrs-81-hEZ" firstAttribute="top" secondItem="Koh-Ic-4k3" secondAttribute="bottom" constant="88" id="ADb-Nx-VGc"/>
                             <constraint firstItem="7lD-T8-1k1" firstAttribute="top" secondItem="Hrs-81-hEZ" secondAttribute="bottom" constant="8" id="FlM-Hj-xAU"/>
@@ -1040,6 +1039,7 @@
                             <constraint firstAttribute="right" secondItem="Koh-Ic-4k3" secondAttribute="rightMargin" constant="8" id="pL5-1l-4dR"/>
                             <constraint firstItem="RJX-8j-wsA" firstAttribute="bottom" secondItem="FsM-me-ufa" secondAttribute="bottom" constant="88" id="pef-tD-W7n"/>
                             <constraint firstAttribute="rightMargin" secondItem="FsM-me-ufa" secondAttribute="right" constant="-20" id="qaY-5K-kJs"/>
+                            <constraint firstItem="KDd-bG-oaf" firstAttribute="top" secondItem="RJX-8j-wsA" secondAttribute="top" constant="80" id="uW1-GP-lcu"/>
                             <constraint firstItem="2kX-iT-DiG" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="w1l-VH-caf"/>
                         </constraints>
                     </view>
