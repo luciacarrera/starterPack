@@ -8,10 +8,16 @@
 import UIKit
 import LanguageTranslatorV3
 
+
+class phrasesViewCell: UICollectionViewCell {
+    @IBOutlet weak var myLabel: UILabel!
+}
+
 class PhrasesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var user: User!
     @IBOutlet var collectionView: UICollectionView!
+    
     let transLanguages = ["Arabic":"ar", "Bengali":"bn", "Bosnian":"bs", "Bulgarian":"bg", "Chinese (Simplified)":"zh", "Chinese (Traditional)":"zh-TW", "Croatian":"hr", "Czech":"cs", "Danish":"da", "Dutch":"nl", "English":"en", "Estonian":"et", "Finnish":"fi", "French":"fr", "German":"de", "Greek":"el", "Gujarati":"gu", "Hebrew":"he", "Hindi":"hi", "Hungarian":"hu", "Irish":"ga", "Indonesian":"id", "Italian":"it", "Japanese":"ja", "Korean":"ko", "Latvian":"lv", "Lithuanian":"lt", "Malay":"ms", "Malayalam":"ml", "Maltese":"mt", "Nepali":"ne", "Norwegian Bokmål":"nb", "Polish":"pl", "Portuguese":"pt", "Romanian":"ro", "Russian":"ru", "Sinhala":"si", "Slovak":"sk", "Slovenian":"sl", "Spanish":"es", "Swedish":"sv", "Tamil":"ta", "Telugu":"te", "Thai":"th", "Turkish":"tr", "Ukrainian":"uk", "Urdu":"ur", "Vietnamese":"vi", "Welsh":"cy"]
     var fromLanguage = "English"
     var toLanguage = "Spanish"
@@ -32,20 +38,13 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
-        myCell.backgroundColor = UIColor.gray
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        label.center = CGPoint(x: 160, y: 285)
-        label.textAlignment = .center
-        label.text = "I'm a test label"
-        self.view.addSubview(label)
+        myCell.backgroundColor = UIColor.white
         return myCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        print("User tapped on item \(indexPath.row)")
     }
-    
-    
 
     func translate(to: String, from: String, input: String) -> String? {
         var output = ""
@@ -67,8 +66,6 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
         return output
     }
     
-    
-    
     var translations = [String]()
     
     func getPhrases() -> [String] {
@@ -84,26 +81,26 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        collectionView.backgroundColor = UIColor.lightGray
 //        translations = getPhrases()
-//
-//        let view = UIView()
-//        view.backgroundColor = .white
-//
-//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-//        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-//        layout.itemSize = CGSize(width: 300, height: 200)
-//        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-//        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
-//        collectionView?.backgroundColor = UIColor.white
-//
-//        collectionView?.dataSource = self
-//        collectionView?.delegate = self
-//
-//        view.addSubview(collectionView ?? UICollectionView())
-//
-//        self.view = view
+
+        let view = UIView()
+        view.backgroundColor = .white
+
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: 300, height: 200)
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+        collectionView?.backgroundColor = UIColor.white
+
+        collectionView?.dataSource = self
+        collectionView?.delegate = self
+
+        view.addSubview(collectionView ?? UICollectionView())
+        collectionView.backgroundColor = UIColor.lightGray
+        
+
+        self.view = view
     }
-    
 
 }
