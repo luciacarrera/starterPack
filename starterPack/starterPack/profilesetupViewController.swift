@@ -10,11 +10,12 @@ import UIKit
 class profileSetupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var homeCountryField: UITextField!
     @IBOutlet var timeZoneField: UITextField!
-    @IBOutlet var currencyField: UITextField!
     @IBOutlet var languageField: UITextField!
+    @IBOutlet var currencyField: UITextField!
     @IBOutlet var clothingField: UITextField!
     @IBOutlet var americanTimeZoneField: UITextField!
 
+    
     @IBAction func done(_ sender: UIButton) {
         // check data
         if homeCountryField.text == "" || timeZoneField.text == "" || currencyField.text == "" || languageField.text == "" || clothingField.text == "" || americanTimeZoneField.text == "" {
@@ -26,9 +27,8 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
         }
         // else, run segue
         else {
-            performSegue(withIdentifier: "userDone", sender: nil)
+            // dont do anything
         }
-            
     }
 
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
@@ -36,8 +36,6 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
     }
     
     var user: User!
-
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -48,7 +46,6 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
         languageField.text = user.language
         clothingField.text = user.clothing
         americanTimeZoneField.text = user.americanTimeZone
-    
     }
     
     override func viewWillDisappear(_ animated: Bool) {

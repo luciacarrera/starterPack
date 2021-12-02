@@ -18,12 +18,7 @@ class ViewController: UIViewController {
     // establish user variable to store all user data
     var user: User!
     
-    // do i need this???
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    
+
     
     //initialize label and buttons
     @IBOutlet var welcome: UILabel!
@@ -57,6 +52,11 @@ class ViewController: UIViewController {
         case "toTime":
             // identify which new view controller is opening
             let newViewController = segue.destination as! TimeViewController
+            let u = user
+            newViewController.user = u
+        case "toCurr":
+            // identify which new view controller is opening
+            let newViewController = segue.destination as! CurrencyViewController
             let u = user
             newViewController.user = u
         case "toMeasure":
