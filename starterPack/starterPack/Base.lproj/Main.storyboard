@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RXb-B4-VdL">
-                                <rect key="frame" x="5" y="286" width="404" height="270.5"/>
+                                <rect key="frame" x="5" y="285" width="404" height="272"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FG6-oj-Rpp">
-                                        <rect key="frame" x="0.0" y="0.0" width="404" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="64"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-7n-TOe">
-                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="63.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="temperature converter"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" image="thermometer.snowflake" catalog="system">
@@ -35,7 +35,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvK-7x-i8b">
-                                                <rect key="frame" x="134.5" y="0.0" width="135" height="63.5"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="timezone converter"/>
                                                 <state key="normal" image="clock" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -45,7 +45,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-JR-ODm">
-                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="63.5"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="currency converter"/>
                                                 <state key="normal" image="dollarsign.square" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="51"/>
@@ -57,10 +57,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="min-aS-gBA">
-                                        <rect key="frame" x="0.0" y="103.5" width="404" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="104" width="404" height="64"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MR-jF-r6I">
-                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="63.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="measurement converter"/>
                                                 <state key="normal">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -70,7 +70,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-Xh-PtH">
-                                                <rect key="frame" x="134.5" y="0.0" width="135" height="63.5"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="traffic laws"/>
                                                 <state key="normal">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -80,7 +80,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-eH-zSv">
-                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="63.5"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="clothing size converter"/>
                                                 <state key="normal">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -92,10 +92,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fW0-rU-0fp">
-                                        <rect key="frame" x="0.0" y="207" width="404" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="208" width="404" height="64"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-U9-jWW">
-                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="63.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="common phrases"/>
                                                 <state key="normal" image="bubble.left.and.bubble.right" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -105,7 +105,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-IG-r8W">
-                                                <rect key="frame" x="134.5" y="0.0" width="135" height="63.5"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="translate"/>
                                                 <state key="normal">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -115,9 +115,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64c-WO-XiD">
-                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="63.5"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="emergency"/>
-                                                <state key="normal" image="exclamationmark.triangle" catalog="system">
+                                                <state key="normal" image="warning">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
                                                 </state>
                                                 <connections>
@@ -1026,9 +1026,9 @@
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dollarsign.square" catalog="system" width="128" height="114"/>
         <image name="eis" width="1280" height="1280"/>
-        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
         <image name="sls" width="1515" height="2018"/>
         <image name="thermometer.snowflake" catalog="system" width="119" height="128"/>
+        <image name="warning" width="64" height="64"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
