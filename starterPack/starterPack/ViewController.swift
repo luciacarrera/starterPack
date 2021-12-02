@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcome.text = "WELCOME TO STARTERPACK"
     }
     
     // establish user variable to store all user data
@@ -31,8 +30,9 @@ class ViewController: UIViewController {
     @IBOutlet var clothingButton: UIButton!
     @IBOutlet var phrasesButton: UIButton!
     @IBOutlet var translateButton: UIButton!
-    @IBOutlet var emergencyButton: UIButton!
 
+    @IBOutlet var emergencyBtn: UIImageView!
+    
     // pass user to other view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

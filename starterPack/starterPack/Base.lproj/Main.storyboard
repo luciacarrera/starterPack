@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RXb-B4-VdL">
-                                <rect key="frame" x="5" y="312" width="404" height="272"/>
+                                <rect key="frame" x="5" y="253" width="404" height="390.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FG6-oj-Rpp">
-                                        <rect key="frame" x="0.0" y="0.0" width="404" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="103.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-7n-TOe">
-                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="temperature converter"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="temp">
@@ -35,7 +35,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvK-7x-i8b">
-                                                <rect key="frame" x="134.5" y="0.0" width="135" height="64"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="timezone converter"/>
                                                 <state key="normal" title="time">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -45,7 +45,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-JR-ODm">
-                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="64"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="currency converter"/>
                                                 <state key="normal" title="currency">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -57,10 +57,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="min-aS-gBA">
-                                        <rect key="frame" x="0.0" y="104" width="404" height="64"/>
+                                        <rect key="frame" x="0.0" y="143.5" width="404" height="103.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MR-jF-r6I">
-                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="measurement converter"/>
                                                 <state key="normal" title="Measurement">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -71,7 +71,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-Xh-PtH">
-                                                <rect key="frame" x="134.5" y="0.0" width="135" height="64"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="traffic laws"/>
                                                 <state key="normal" title="traffic">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -82,7 +82,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-eH-zSv">
-                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="64"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="clothing size converter"/>
                                                 <state key="normal" title="Clothing">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -95,10 +95,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fW0-rU-0fp">
-                                        <rect key="frame" x="0.0" y="208" width="404" height="64"/>
+                                        <rect key="frame" x="0.0" y="287" width="404" height="103.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-U9-jWW">
-                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="common phrases"/>
                                                 <state key="normal" title="Phrases">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -108,7 +108,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-IG-r8W">
-                                                <rect key="frame" x="134.5" y="0.0" width="135" height="64"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="translate"/>
                                                 <state key="normal" title="translate">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -119,7 +119,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64c-WO-XiD">
-                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="64"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="emergency"/>
                                                 <state key="normal" image="warning">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -129,16 +129,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="404" id="HC5-hk-PkQ"/>
+                                            <constraint firstAttribute="height" constant="103.5" id="HYj-yR-ACK"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12o-GV-QzQ">
-                                <rect key="frame" x="132" y="125" width="151" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENv-Nf-rxp">
                                 <rect key="frame" x="337" y="108" width="57" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="Edit User Info"/>
@@ -160,9 +157,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="starterPack" id="O3p-Hv-sic"/>
-                    <connections>
-                        <outlet property="welcome" destination="12o-GV-QzQ" id="UHy-Sc-aSK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -650,7 +644,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-Lu-IE0">
-                                <rect key="frame" x="37" y="252" width="137" height="94"/>
+                                <rect key="frame" x="37" y="252" width="137" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="137" id="lpS-V8-FnY"/>
                                 </constraints>
@@ -661,7 +655,7 @@
                                 <state key="normal" title="Button" image="eis"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jGi-cO-dqx">
-                                <rect key="frame" x="219" y="175" width="137" height="128"/>
+                                <rect key="frame" x="219" y="263" width="137" height="94"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="When driving on the interstate, stay in the right lane unless passing another vehicle.">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -671,7 +665,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YSx-1l-b1e">
-                                <rect key="frame" x="37" y="164" width="137" height="153"/>
+                                <rect key="frame" x="37" y="252" width="137" height="119"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="US speed limit signs are in miles per hour. Highway speed limits are typically between 65 and 80 miles per hour.">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -1090,7 +1084,7 @@
     <resources>
         <image name="eis" width="1280" height="1280"/>
         <image name="sls" width="1515" height="2018"/>
-        <image name="warning" width="64" height="64"/>
+        <image name="warning" width="973" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
