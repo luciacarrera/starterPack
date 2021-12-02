@@ -674,6 +674,11 @@
                                     <action selector="animateSpeedLimit:" destination="raR-NU-WTg" eventType="touchDown" id="qv9-Pd-xVT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLE-vX-JnE">
+                                <rect key="frame" x="162" y="49" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1BU-Ha-jqr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
