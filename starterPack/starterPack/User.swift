@@ -29,6 +29,6 @@ class User: Codable{
     
     convenience init() {
         // create sample item to be customized
-        self.init(homeCountry: "USA", timeZone: "", currency: "", language: "", clothing: "", americanTimeZone: "")
+        self.init(homeCountry: "", timeZone: "", currency: "", language: "", clothing: "", americanTimeZone: "")
     }
 }
