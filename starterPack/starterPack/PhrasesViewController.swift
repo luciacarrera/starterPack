@@ -13,10 +13,15 @@ class phrasesViewCell: UICollectionViewCell {
     @IBOutlet weak var myLabel: UILabel!
 }
 
-class PhrasesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class PhrasesViewController: UIViewController {
+//    , UICollectionViewDelegate, UICollectionViewDataSource
     
     var user: User!
-    @IBOutlet var collectionView: UICollectionView!
+//    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var fromLabel: UILabel!
+    @IBOutlet var toLabel: UILabel!
+    @IBOutlet var fromText: UITextView!
+    @IBOutlet var toText: UITextView!
     
     let transLanguages = ["Arabic":"ar", "Bengali":"bn", "Bosnian":"bs", "Bulgarian":"bg", "Chinese (Simplified)":"zh", "Chinese (Traditional)":"zh-TW", "Croatian":"hr", "Czech":"cs", "Danish":"da", "Dutch":"nl", "English":"en", "Estonian":"et", "Finnish":"fi", "French":"fr", "German":"de", "Greek":"el", "Gujarati":"gu", "Hebrew":"he", "Hindi":"hi", "Hungarian":"hu", "Irish":"ga", "Indonesian":"id", "Italian":"it", "Japanese":"ja", "Korean":"ko", "Latvian":"lv", "Lithuanian":"lt", "Malay":"ms", "Malayalam":"ml", "Maltese":"mt", "Nepali":"ne", "Norwegian Bokmål":"nb", "Polish":"pl", "Portuguese":"pt", "Romanian":"ro", "Russian":"ru", "Sinhala":"si", "Slovak":"sk", "Slovenian":"sl", "Spanish":"es", "Swedish":"sv", "Tamil":"ta", "Telugu":"te", "Thai":"th", "Turkish":"tr", "Ukrainian":"uk", "Urdu":"ur", "Vietnamese":"vi", "Welsh":"cy"]
     var fromLanguage = "English"
@@ -32,19 +37,19 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
         "How much does this cost?"
     ]
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return phrases.count // How many cells to display
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
-        myCell.backgroundColor = UIColor.white
-        return myCell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       print("User tapped on item \(indexPath.row)")
-    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return phrases.count // How many cells to display
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
+//        myCell.backgroundColor = UIColor.white
+//        return myCell
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//       print("User tapped on item \(indexPath.row)")
+//    }
 
     func translate(to: String, from: String, input: String) -> String? {
         var output = ""
@@ -83,24 +88,24 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
 //        translations = getPhrases()
 
-        let view = UIView()
-        view.backgroundColor = .white
-
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 300, height: 200)
-        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
-        collectionView?.backgroundColor = UIColor.white
-
-        collectionView?.dataSource = self
-        collectionView?.delegate = self
-
-        view.addSubview(collectionView ?? UICollectionView())
-        collectionView.backgroundColor = UIColor.lightGray
-        
-
-        self.view = view
+//        let view = UIView()
+//        view.backgroundColor = .white
+//
+//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+//        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+//        layout.itemSize = CGSize(width: 300, height: 200)
+//        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+//        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+//        collectionView?.backgroundColor = UIColor.white
+//
+//        collectionView?.dataSource = self
+//        collectionView?.delegate = self
+//
+//        view.addSubview(collectionView ?? UICollectionView())
+//        collectionView.backgroundColor = UIColor.lightGray
+//
+//
+//        self.view = view
     }
 
 }

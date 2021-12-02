@@ -59,6 +59,8 @@ class TranslateViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputTextView.layer.borderColor = UIColor.black.cgColor
+        transView.layer.borderColor = UIColor.black.cgColor
         updateLabels()
     }
     
