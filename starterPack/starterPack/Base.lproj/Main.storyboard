@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,19 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="RXb-B4-VdL">
-                                <rect key="frame" x="8" y="226" width="398" height="390"/>
-=======
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RXb-B4-VdL">
-                                <rect key="frame" x="5" y="312" width="404" height="272"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
+                                <rect key="frame" x="5" y="253" width="404" height="390.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FG6-oj-Rpp">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="103.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-7n-TOe">
-                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="temperature converter"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="temp">
@@ -40,7 +35,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvK-7x-i8b">
-                                                <rect key="frame" x="132.5" y="0.0" width="133" height="70"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="timezone converter"/>
                                                 <state key="normal" title="time">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -50,7 +45,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-JR-ODm">
-                                                <rect key="frame" x="265.5" y="0.0" width="132.5" height="70"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="currency converter"/>
                                                 <state key="normal" title="currency">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -62,10 +57,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="min-aS-gBA">
-                                        <rect key="frame" x="0.0" y="160" width="398" height="70"/>
+                                        <rect key="frame" x="0.0" y="143.5" width="404" height="103.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MR-jF-r6I">
-                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="measurement converter"/>
                                                 <state key="normal" title="Measurement">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -76,23 +71,18 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-Xh-PtH">
-                                                <rect key="frame" x="132.5" y="0.0" width="133" height="70"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="traffic laws"/>
-<<<<<<< HEAD
-                                                <state key="normal">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="small"/>
-=======
                                                 <state key="normal" title="traffic">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                                 </state>
                                                 <connections>
                                                     <segue destination="raR-NU-WTg" kind="show" identifier="toTraffic" id="oKH-rP-3UP"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-eH-zSv">
-                                                <rect key="frame" x="265.5" y="0.0" width="132.5" height="70"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="clothing size converter"/>
                                                 <state key="normal" title="Clothing">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -105,10 +95,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fW0-rU-0fp">
-                                        <rect key="frame" x="0.0" y="320" width="398" height="70"/>
+                                        <rect key="frame" x="0.0" y="287" width="404" height="103.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-U9-jWW">
-                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="common phrases"/>
                                                 <state key="normal" title="Phrases">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -118,10 +108,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-IG-r8W">
-                                                <rect key="frame" x="132.5" y="0.0" width="133" height="70"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="135" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="translate"/>
-<<<<<<< HEAD
-=======
                                                 <state key="normal" title="translate">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
@@ -131,31 +119,22 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64c-WO-XiD">
-                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="64"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="134.5" height="103.5"/>
                                                 <accessibility key="accessibilityConfiguration" label="emergency"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                                 <state key="normal" image="warning">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
                                                 </state>
                                                 <connections>
-<<<<<<< HEAD
-                                                    <segue destination="Z4e-UA-XIl" kind="showDetail" identifier="toTranslate" id="HFC-aV-vPx"/>
-=======
                                                     <segue destination="r0a-dm-Tdt" kind="show" identifier="toEmergency" id="aWj-JZ-SNq"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="70" image="warning" translatesAutoresizingMaskIntoConstraints="NO" id="T5D-Nm-9xr">
-                                                <rect key="frame" x="265.5" y="0.0" width="132.5" height="70"/>
-                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="ultraLight"/>
-                                            </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="404" id="HC5-hk-PkQ"/>
+                                            <constraint firstAttribute="height" constant="103.5" id="HYj-yR-ACK"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="398" id="dtB-0s-RNa"/>
-                                    <constraint firstAttribute="height" constant="390" id="eyD-ew-zvg"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENv-Nf-rxp">
                                 <rect key="frame" x="337" y="108" width="57" height="30"/>
@@ -169,27 +148,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-<<<<<<< HEAD
-                            <constraint firstItem="RXb-B4-VdL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="AEm-Ra-A50"/>
-                            <constraint firstItem="ENv-Nf-rxp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c2P-Aw-LBu"/>
-                            <constraint firstItem="RXb-B4-VdL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cXi-nK-zvB"/>
-                            <constraint firstItem="RXb-B4-VdL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="es6-qn-IOT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RXb-B4-VdL" secondAttribute="trailing" constant="8" id="lBT-fN-VoO"/>
-                            <constraint firstItem="ENv-Nf-rxp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zDj-7d-tek"/>
-=======
                             <constraint firstItem="ENv-Nf-rxp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5lA-ze-0LF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RXb-B4-VdL" secondAttribute="trailing" constant="5" id="Gpg-y7-X4M"/>
                             <constraint firstItem="RXb-B4-VdL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ivO-K0-sW3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ENv-Nf-rxp" secondAttribute="trailing" constant="20" id="kmx-ez-POS"/>
                             <constraint firstItem="RXb-B4-VdL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="mBn-gV-A3N"/>
                             <constraint firstItem="RXb-B4-VdL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oAx-wI-kcP"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="starterPack" id="O3p-Hv-sic"/>
-                    <connections>
-                        <outlet property="emergencyBtn" destination="T5D-Nm-9xr" id="cB8-zg-lxE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -677,7 +644,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-Lu-IE0">
-                                <rect key="frame" x="37" y="252" width="137" height="94"/>
+                                <rect key="frame" x="37" y="252" width="137" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="137" id="lpS-V8-FnY"/>
                                 </constraints>
@@ -688,7 +655,7 @@
                                 <state key="normal" title="Button" image="eis"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jGi-cO-dqx">
-                                <rect key="frame" x="219" y="175" width="137" height="128"/>
+                                <rect key="frame" x="219" y="263" width="137" height="94"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="When driving on the interstate, stay in the right lane unless passing another vehicle.">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -698,7 +665,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YSx-1l-b1e">
-                                <rect key="frame" x="37" y="164" width="137" height="153"/>
+                                <rect key="frame" x="37" y="252" width="137" height="119"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="US speed limit signs are in miles per hour. Highway speed limits are typically between 65 and 80 miles per hour.">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -751,67 +718,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnh-7w-O4P">
-<<<<<<< HEAD
-                                <rect key="frame" x="58.5" y="94" width="297" height="40"/>
-=======
                                 <rect key="frame" x="58.5" y="138" width="297" height="40"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="National Emergency Number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-df-n9P">
-<<<<<<< HEAD
-                                <rect key="frame" x="76" y="224" width="262.5" height="25.5"/>
-=======
                                 <rect key="frame" x="76" y="268" width="262.5" height="25.5"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sob-TY-T0z">
-<<<<<<< HEAD
-                                <rect key="frame" x="192" y="257.5" width="30" height="30"/>
-                                <state key="normal" title="911"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UVM Police" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHH-bz-rBM">
-                                <rect key="frame" x="154" y="377.5" width="106" height="25.5"/>
-=======
                                 <rect key="frame" x="192" y="301.5" width="30" height="30"/>
                                 <state key="normal" title="911"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UVM Police" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHH-bz-rBM">
                                 <rect key="frame" x="154" y="421.5" width="106" height="25.5"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub1-QG-FUL">
-<<<<<<< HEAD
-                                <rect key="frame" x="140.5" y="411" width="133" height="30"/>
-                                <state key="normal" title="+1 (802) 656-3473"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucía" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5v-04-AyH">
-                                <rect key="frame" x="182.5" y="531" width="49" height="25.5"/>
-=======
                                 <rect key="frame" x="140.5" y="455" width="133" height="30"/>
                                 <state key="normal" title="+1 (802) 656-3473"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucía" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5v-04-AyH">
                                 <rect key="frame" x="182.5" y="575" width="49" height="25.5"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-dA-Pfq">
-<<<<<<< HEAD
-                                <rect key="frame" x="141.5" y="564.5" width="131" height="30"/>
-=======
                                 <rect key="frame" x="141.5" y="608.5" width="131" height="30"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
                                 <state key="normal" title="+1 (802) 829-1582"/>
                             </button>
                         </subviews>
@@ -1145,12 +1084,7 @@
     <resources>
         <image name="eis" width="1280" height="1280"/>
         <image name="sls" width="1515" height="2018"/>
-<<<<<<< HEAD
-        <image name="thermometer.snowflake" catalog="system" width="119" height="128"/>
-        <image name="warning" width="512" height="512"/>
-=======
-        <image name="warning" width="64" height="64"/>
->>>>>>> 016ae86cd85b3ec1a6fe3178ca5ce29ef3dd9b4f
+        <image name="warning" width="973" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
