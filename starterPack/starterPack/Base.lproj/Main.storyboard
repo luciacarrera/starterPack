@@ -1025,12 +1025,8 @@
         <image name="bubble.left.and.bubble.right" catalog="system" width="128" height="96"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dollarsign.square" catalog="system" width="128" height="114"/>
-<<<<<<< HEAD
-=======
         <image name="eis" width="1280" height="1280"/>
-        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
         <image name="sls" width="1515" height="2018"/>
->>>>>>> ce038b792715bb591a0afec9e893e1b682bf400f
         <image name="thermometer.snowflake" catalog="system" width="119" height="128"/>
         <image name="warning" width="64" height="64"/>
         <systemColor name="labelColor">
