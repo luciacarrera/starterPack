@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcome.text = "WELCOME TO STARTERPACK"
     }
     
     // establish user variable to store all user data
@@ -27,7 +26,6 @@ class ViewController: UIViewController {
     
     
     //initialize label and buttons
-    @IBOutlet var welcome: UILabel!
     @IBOutlet var temperatureButton: UIButton!
     @IBOutlet var currencyButton: UIButton!
     @IBOutlet var measureButton: UIButton!
