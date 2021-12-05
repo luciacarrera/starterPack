@@ -54,45 +54,42 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
     }
     
     var user: User!
-
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        /*
-        homeCountryField.text = user.homeCountry
-        //timeZoneField.text = user.timeZone
-        currencyField.text = user.currency
-        languageField.text = user.language
-        clothingField.text = user.clothing
-        americanTimeZoneField.text = user.americanTimeZone
-         */
-    
+        if let homeCountryIndex = homeCountryOptions.firstIndex(of: user.homeCountry){
+            homeContryPicker.selectRow(homeCountryIndex, inComponent: 0, animated: true)
+        }
+        if let timeZoneIndex = timeZoneOptions.firstIndex(of: user.timeZone){
+            timeZonePicker.selectRow(timeZoneIndex, inComponent: 0, animated: true)
+        }
+        if let langugeIndex = langugeOptions.firstIndex(of: user.language){
+            langugePicker.selectRow(langugeIndex, inComponent: 0, animated: true)
+        }
+        if let currencyIndex = currencyOptions.firstIndex(of: user.currency){
+            currencyPicker.selectRow(currencyIndex, inComponent: 0, animated: true)
+        }
+        if let clothingIndex = clothingOptions.firstIndex(of: user.clothing){
+            clothingPicker.selectRow(clothingIndex, inComponent: 0, animated: true)
+        }
+        if let americanTimeZoneIndex = americanTimeZoneOptions.firstIndex(of: user.americanTimeZone){
+            americanTimeZonePicker.selectRow(americanTimeZoneIndex, inComponent: 0, animated: true)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         view.endEditing(true)
-        /*
-        // "save" changes made to an item
-        user.homeCountry = homeCountryField.text ?? ""
-        //user.timeZone = timeZoneField.text ?? ""
-        user.currency = currencyField.text ?? ""
-        user.language = languageField.text ?? ""
-        user.clothing = clothingField.text ?? ""
-        user.americanTimeZone = americanTimeZoneField.text ?? ""
-        */
-         
+
         print(user.homeCountry)
         print(user.timeZone)
-        print(user.currency)
         print(user.language)
+        print(user.currency)
         print(user.clothing)
         print(user.americanTimeZone)
     }
-    
 }
 
 extension profileSetupViewController: UIPickerViewDataSource {
