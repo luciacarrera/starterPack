@@ -57,6 +57,11 @@ class mainViewController: UIViewController {
             let newViewController = segue.destination as! TimeViewController
             let u = user
             newViewController.user = u
+        case "toCurr":
+            // identify which new view controller is opening
+            let newViewController = segue.destination as! CurrencyViewController
+            let u = user
+            newViewController.user = u
         case "toMeasure":
             // identify which new view controller is opening
             let newViewController = segue.destination as! MeasurementViewController
