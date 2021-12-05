@@ -75,10 +75,16 @@ class TranslateViewController: UIViewController {
         toLabel.text = toLanguage
     }
     
-//    @IBAction func swapLanguages() {
-//        fromLanguage = "English"
-//        toLanguage = "Spanish"
-//    }
+    @IBAction func swapLanguages() {
+        if (fromLanguage == "Spanish") {
+            fromLanguage = "English"
+            toLanguage = "Spanish"
+        } else {
+            fromLanguage = "Spanish"
+            toLanguage = "English"
+        }
+        updateLabels()
+    }
     
     func getInput() -> String? {
         let input = inputTextView.text

@@ -9,10 +9,8 @@ import UIKit
 import LanguageTranslatorV3
 
 class PhrasesViewController: UIViewController {
-//    , UICollectionViewDelegate, UICollectionViewDataSource
     
     var user: User!
-//    @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var fromLabel: UILabel!
     @IBOutlet var toLabel: UILabel!
     @IBOutlet var fromText: UITextView!
@@ -31,20 +29,6 @@ class PhrasesViewController: UIViewController {
         "Where can I find a grocery store?",
         "How much does this cost?"
     ]
-    
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return phrases.count // How many cells to display
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
-//        myCell.backgroundColor = UIColor.white
-//        return myCell
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//       print("User tapped on item \(indexPath.row)")
-//    }
 
     func translate(to: String, from: String, input: String) -> String? {
         var output = ""
@@ -98,25 +82,6 @@ class PhrasesViewController: UIViewController {
         fromText.text = phrases[currentIndex]
         toText.text = translations[currentIndex]
 
-
-//        let view = UIView()
-//        view.backgroundColor = .white
-//
-//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-//        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-//        layout.itemSize = CGSize(width: 300, height: 200)
-//        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-//        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
-//        collectionView?.backgroundColor = UIColor.white
-//
-//        collectionView?.dataSource = self
-//        collectionView?.delegate = self
-//
-//        view.addSubview(collectionView ?? UICollectionView())
-//        collectionView.backgroundColor = UIColor.lightGray
-//
-//
-//        self.view = view
     }
 
 }
