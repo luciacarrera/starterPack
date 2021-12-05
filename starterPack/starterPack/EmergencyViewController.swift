@@ -10,11 +10,10 @@ import UIKit
 class EmergencyViewController: UIViewController {
     
     var user: User!
-
     
-    @IBOutlet var btn911: UIButton!
-    @IBOutlet var btnPoision: UIButton!
-    @IBOutlet var btnLucia: UIButton!
+    @IBOutlet var BtnUvmPolice: UIButton!
+    @IBOutlet var BtnLucia: UIButton!
+    @IBOutlet var BtnEmergency: UIButton!
     
     
     override func viewDidLoad() {
@@ -25,11 +24,40 @@ class EmergencyViewController: UIViewController {
     }
     
     // to be developed to take all numbers and call them
-    @IBAction func call(_ btnLucia: UIButton) {
+    //@IBAction func call(_ sender: UIButton) {
+        
+        //print("hello")
         // this function has yet to be tested as the programmer had to use a macincloud and
         // could not try it out
-        guard let number = URL(string: "tel://8028291582" ) else { return }
-        UIApplication.shared.open(number)
+        //guard let number = URL(string: "tel://8028291582" ) else { return }
+        //UIApplication.shared.open(number)
+    //}
+    
+    @IBAction func callNumber(_ sender: UIButton){
+        var phoneName = ""
+        var phoneNumber = ""
+        
+        if sender == BtnUvmPolice{
+            phoneName = "the UVM Police"
+            phoneNumber = "+18026563473"
+        }
+        if sender == BtnLucia{
+            phoneName = "Lucia"
+            phoneNumber = "+18028291582"
+        }
+        if sender == BtnEmergency{
+            phoneName = "the UVM Police"
+            phoneNumber = "+1911"
+        }
+        let alertController = UIAlertController(title: nil, message: "Are you sure you want to call \(phoneName)?", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Yes", style: .destructive)
+               alertController.addAction(okAction)
+               
+               let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+               alertController.addAction(cancelAction)
+               
+               present(alertController, animated: true) // completion: nil
+        print("hello")
     }
 
     /*

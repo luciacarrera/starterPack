@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -712,66 +713,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnh-7w-O4P">
-                                <rect key="frame" x="58.5" y="50" width="297" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="National Emergency Number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-df-n9P">
-                                <rect key="frame" x="76" y="180" width="262.5" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sob-TY-T0z">
-                                <rect key="frame" x="192" y="213.5" width="30" height="30"/>
-                                <state key="normal" title="911"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UVM Police" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHH-bz-rBM">
-                                <rect key="frame" x="154" y="333.5" width="106" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub1-QG-FUL">
-                                <rect key="frame" x="140.5" y="367" width="133" height="30"/>
-                                <state key="normal" title="+1 (802) 656-3473"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucía" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5v-04-AyH">
-                                <rect key="frame" x="182.5" y="487" width="49" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-dA-Pfq">
-                                <rect key="frame" x="141.5" y="520.5" width="131" height="30"/>
-                                <state key="normal" title="+1 (802) 829-1582"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2as-rD-mDP">
+                                <rect key="frame" x="20" y="239" width="374" height="364"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wZm-jz-SCd">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="46"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HP4-dI-Erc">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="46"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="National Emergency Number" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-df-n9P">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="25.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 911" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3D-Fe-czd">
+                                                        <rect key="frame" x="0.0" y="25.5" width="304" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITs-vg-cdq">
+                                                <rect key="frame" x="324" y="0.0" width="50" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="6cX-5q-rxy"/>
+                                                    <constraint firstAttribute="height" constant="46" id="nkP-GO-uUE"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="phone" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="callNumber:" destination="r0a-dm-Tdt" eventType="touchUpInside" id="Bkt-MH-2lV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gXt-bi-xgu">
+                                        <rect key="frame" x="0.0" y="159" width="374" height="46"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pv3-sC-Yn8">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="46"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UVM Police" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrD-bD-cAt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="25.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 (802) 656-3473" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhv-66-ZOQ">
+                                                        <rect key="frame" x="0.0" y="25.5" width="304" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-TA-1md">
+                                                <rect key="frame" x="324" y="0.0" width="50" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="cmp-Q2-dsc"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="phone" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="callNumber:" destination="r0a-dm-Tdt" eventType="touchUpInside" id="sbm-tL-qBd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8X4-Aw-b8q">
+                                        <rect key="frame" x="0.0" y="318" width="374" height="46"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pPo-Hv-zxO">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="46"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucia's Personal Number" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a5-DU-Rnf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="25.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 (802) 829-1582" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgs-t7-4b6">
+                                                        <rect key="frame" x="0.0" y="25.5" width="304" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMH-72-ipx">
+                                                <rect key="frame" x="324" y="0.0" width="50" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="e85-kk-yCD"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="phone" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="callNumber:" destination="r0a-dm-Tdt" eventType="touchUpInside" id="boc-mD-3qV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NmU-9a-lmC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ub1-QG-FUL" firstAttribute="top" secondItem="mHH-bz-rBM" secondAttribute="bottom" constant="8" id="1fu-Bg-eex"/>
-                            <constraint firstItem="DgE-dA-Pfq" firstAttribute="centerX" secondItem="Rnh-7w-O4P" secondAttribute="centerX" id="Ai7-4S-WwG"/>
-                            <constraint firstItem="V5v-04-AyH" firstAttribute="top" secondItem="ub1-QG-FUL" secondAttribute="bottom" constant="90" id="CoJ-aE-6QD"/>
-                            <constraint firstItem="V5v-04-AyH" firstAttribute="centerX" secondItem="Rnh-7w-O4P" secondAttribute="centerX" id="OEe-Gz-Ijk"/>
-                            <constraint firstItem="DgE-dA-Pfq" firstAttribute="top" secondItem="V5v-04-AyH" secondAttribute="bottom" constant="8" id="Q28-RH-cAh"/>
-                            <constraint firstItem="Sob-TY-T0z" firstAttribute="centerX" secondItem="Rnh-7w-O4P" secondAttribute="centerX" id="Urh-ol-wtY"/>
-                            <constraint firstItem="mHH-bz-rBM" firstAttribute="centerX" secondItem="Rnh-7w-O4P" secondAttribute="centerX" id="bl7-Fm-fxv"/>
-                            <constraint firstItem="ub1-QG-FUL" firstAttribute="centerX" secondItem="Rnh-7w-O4P" secondAttribute="centerX" id="d7U-s1-DjZ"/>
-                            <constraint firstItem="mHH-bz-rBM" firstAttribute="top" secondItem="Sob-TY-T0z" secondAttribute="bottom" constant="90" id="fSq-ec-2Hz"/>
-                            <constraint firstItem="Sob-TY-T0z" firstAttribute="top" secondItem="Vx1-df-n9P" secondAttribute="bottom" constant="8" id="g1Q-Rs-hPC"/>
-                            <constraint firstItem="Vx1-df-n9P" firstAttribute="top" secondItem="Rnh-7w-O4P" secondAttribute="bottom" constant="90" id="hTz-iq-nR6"/>
-                            <constraint firstItem="Rnh-7w-O4P" firstAttribute="top" secondItem="NmU-9a-lmC" secondAttribute="top" constant="50" id="iY2-yt-wtr"/>
-                            <constraint firstItem="Rnh-7w-O4P" firstAttribute="centerX" secondItem="nTY-T5-Qhk" secondAttribute="centerX" id="nkc-hK-3m6"/>
-                            <constraint firstItem="Vx1-df-n9P" firstAttribute="centerX" secondItem="Rnh-7w-O4P" secondAttribute="centerX" id="vIg-yF-lRC"/>
+                            <constraint firstItem="2as-rD-mDP" firstAttribute="leading" secondItem="NmU-9a-lmC" secondAttribute="leading" constant="20" id="3lq-Y8-KFd"/>
+                            <constraint firstItem="NmU-9a-lmC" firstAttribute="trailing" secondItem="2as-rD-mDP" secondAttribute="trailing" constant="20" id="89t-yF-2pF"/>
+                            <constraint firstItem="2as-rD-mDP" firstAttribute="centerX" secondItem="nTY-T5-Qhk" secondAttribute="centerX" id="lU9-Lw-pE7"/>
+                            <constraint firstItem="2as-rD-mDP" firstAttribute="centerY" secondItem="nTY-T5-Qhk" secondAttribute="centerY" id="rQE-9T-i9b"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btn911" destination="Sob-TY-T0z" id="R5d-7E-fi0"/>
-                        <outlet property="btnLucia" destination="DgE-dA-Pfq" id="9vc-eg-AUz"/>
-                        <outlet property="btnPoision" destination="ub1-QG-FUL" id="hHy-LB-Smb"/>
+                        <outlet property="BtnEmergency" destination="ITs-vg-cdq" id="5dF-s4-WKh"/>
+                        <outlet property="BtnLucia" destination="PMH-72-ipx" id="K9Q-Ud-2ww"/>
+                        <outlet property="BtnUvmPolice" destination="NQQ-TA-1md" id="5qj-HK-6qM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMf-eB-xMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1059,6 +1122,7 @@
         <image name="clock" width="973" height="512"/>
         <image name="eis" width="1280" height="1280"/>
         <image name="money" width="973" height="512"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
         <image name="scale" width="973" height="512"/>
         <image name="sls" width="1515" height="2018"/>
         <image name="temp" width="973" height="512"/>
