@@ -10,8 +10,23 @@ import UIKit
 class profileSetupViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
+        homeContryPicker.dataSource = self
+        homeContryPicker.delegate = self
+        
         timeZonePicker.dataSource = self
         timeZonePicker.delegate = self
+        
+        langugePicker.dataSource = self
+        langugePicker.delegate = self
+        
+        currencyPicker.dataSource = self
+        currencyPicker.delegate = self
+        
+        clothingPicker.dataSource = self
+        clothingPicker.delegate = self
+        
+        americanTimeZonePicker.dataSource = self
+        americanTimeZonePicker.delegate = self
     }
     
     
@@ -110,22 +125,22 @@ extension profileSetupViewController: UIPickerViewDataSource {
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView.tag == 1 {
-            user.homeCountry = String(homeCountryOptions[row])
+            user.homeCountry = homeCountryOptions[row]
         }
         else if pickerView.tag == 2 {
-            user.timeZone = String(timeZoneOptions[row])
+            user.timeZone = timeZoneOptions[row]
         }
         else if pickerView.tag == 3 {
-            user.language = String(langugeOptions[row])
+            user.language = langugeOptions[row]
         }
         else if pickerView.tag == 4 {
-            user.currency = String(currencyOptions[row])
+            user.currency = currencyOptions[row]
         }
         else if pickerView.tag == 5 {
-            user.clothing = String(clothingOptions[row])
+            user.clothing = clothingOptions[row]
         }
         else if pickerView.tag == 6 {
-            user.americanTimeZone = String(americanTimeZoneOptions[row])
+            user.americanTimeZone = americanTimeZoneOptions[row]
         }
     }
 }
@@ -133,22 +148,22 @@ extension profileSetupViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     
         if pickerView.tag == 1 {
-            return String(homeCountryOptions[row])
+            return homeCountryOptions[row]
         }
         else if pickerView.tag == 2 {
-            return String(timeZoneOptions[row])
+            return timeZoneOptions[row]
         }
         else if pickerView.tag == 3 {
-            return String(langugeOptions[row])
+            return langugeOptions[row]
         }
         else if pickerView.tag == 4 {
-            return String(currencyOptions[row])
+            return currencyOptions[row]
         }
         else if pickerView.tag == 5 {
-            return String(clothingOptions[row])
+            return clothingOptions[row]
         }
         else if pickerView.tag == 6 {
-            return String(americanTimeZoneOptions[row])
+            return americanTimeZoneOptions[row]
         }
         else {
             return "???"

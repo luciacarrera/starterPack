@@ -254,7 +254,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtS-if-HRj">
-                                                <rect key="frame" x="121" y="0.0" width="273" height="61.5"/>
+                                                <rect key="frame" x="121" y="0.0" width="273" height="62"/>
                                             </pickerView>
                                         </subviews>
                                     </stackView>
@@ -305,12 +305,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="LpX-BN-aB2"/>
                     <connections>
-                        <outlet property="americanTimeZonePicker" destination="HFF-EB-XH3" id="Ob5-S3-YEW"/>
-                        <outlet property="clothingPicker" destination="UtS-if-HRj" id="Mne-tK-C0z"/>
-                        <outlet property="currencyPicker" destination="cL0-dM-a7z" id="SfY-DA-GDc"/>
-                        <outlet property="homeContryPicker" destination="SzH-L9-vqQ" id="xZf-Fb-ZQX"/>
-                        <outlet property="langugePicker" destination="oqA-rK-PWP" id="8as-Ae-DBo"/>
-                        <outlet property="timeZonePicker" destination="8Wu-w7-qJJ" id="oYy-4G-NCA"/>
+                        <outlet property="americanTimeZonePicker" destination="HFF-EB-XH3" id="h1e-Q2-eiX"/>
+                        <outlet property="clothingPicker" destination="UtS-if-HRj" id="1GA-ER-Sr2"/>
+                        <outlet property="currencyPicker" destination="cL0-dM-a7z" id="10K-ib-1Bq"/>
+                        <outlet property="homeContryPicker" destination="SzH-L9-vqQ" id="Tef-8u-dB6"/>
+                        <outlet property="langugePicker" destination="oqA-rK-PWP" id="Qgg-me-EWd"/>
+                        <outlet property="timeZonePicker" destination="8Wu-w7-qJJ" id="jVR-I3-DxQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koO-ER-tBK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
