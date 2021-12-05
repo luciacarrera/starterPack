@@ -46,18 +46,25 @@ class EmergencyViewController: UIViewController {
             phoneNumber = "+18028291582"
         }
         if sender == BtnEmergency{
-            phoneName = "the UVM Police"
+            phoneName = "the National Emergency Number"
             phoneNumber = "+1911"
         }
         let alertController = UIAlertController(title: nil, message: "Are you sure you want to call \(phoneName)?", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Yes", style: .destructive)
-               alertController.addAction(okAction)
+        let okAction = UIAlertAction(title: "Yes", style: .destructive){_ in
+            if let url = URL(string: "tel://\(phoneNumber)"), UIApplication.shared.canOpenURL(url) {
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url)
+                } else {
+                    UIApplication.shared.openURL(url)
+                }
+            }
+        }
+        alertController.addAction(okAction)
                
                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
                alertController.addAction(cancelAction)
                
                present(alertController, animated: true) // completion: nil
-        print("hello")
     }
 
     /*
