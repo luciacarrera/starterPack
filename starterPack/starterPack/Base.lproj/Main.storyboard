@@ -97,7 +97,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-U9-jWW">
                                                 <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="common phrases"/>
-                                                <state key="normal" image="bubble.left.and.bubble.right" catalog="system">
+                                                <state key="normal" image="chat">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
                                                 </state>
                                                 <connections>
@@ -107,9 +107,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-IG-r8W">
                                                 <rect key="frame" x="134.5" y="0.0" width="135" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="translate"/>
-                                                <state key="normal">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
-                                                </state>
+                                                <state key="normal" image="temp"/>
                                                 <connections>
                                                     <segue destination="Z4e-UA-XIl" kind="showDetail" identifier="toTranslate" id="HFC-aV-vPx"/>
                                                 </connections>
@@ -1062,11 +1060,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bubble.left.and.bubble.right" catalog="system" width="128" height="96"/>
+        <image name="chat" width="973" height="512"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="dollarsign.square" catalog="system" width="128" height="114"/>
         <image name="eis" width="1280" height="1280"/>
         <image name="sls" width="1515" height="2018"/>
+        <image name="temp" width="973" height="512"/>
         <image name="thermometer.snowflake" catalog="system" width="119" height="128"/>
         <image name="warning" width="973" height="512"/>
         <systemColor name="labelColor">
