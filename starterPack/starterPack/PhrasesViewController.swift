@@ -8,14 +8,20 @@
 import UIKit
 import LanguageTranslatorV3
 
-class PhrasesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class PhrasesViewController: UIViewController {
+//    , UICollectionViewDelegate, UICollectionViewDataSource
     
     var user: User!
-    @IBOutlet var collectionView: UICollectionView!
+//    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var fromLabel: UILabel!
+    @IBOutlet var toLabel: UILabel!
+    @IBOutlet var fromText: UITextView!
+    @IBOutlet var toText: UITextView!
+    
     let transLanguages = ["Arabic":"ar", "Bengali":"bn", "Bosnian":"bs", "Bulgarian":"bg", "Chinese (Simplified)":"zh", "Chinese (Traditional)":"zh-TW", "Croatian":"hr", "Czech":"cs", "Danish":"da", "Dutch":"nl", "English":"en", "Estonian":"et", "Finnish":"fi", "French":"fr", "German":"de", "Greek":"el", "Gujarati":"gu", "Hebrew":"he", "Hindi":"hi", "Hungarian":"hu", "Irish":"ga", "Indonesian":"id", "Italian":"it", "Japanese":"ja", "Korean":"ko", "Latvian":"lv", "Lithuanian":"lt", "Malay":"ms", "Malayalam":"ml", "Maltese":"mt", "Nepali":"ne", "Norwegian Bokmål":"nb", "Polish":"pl", "Portuguese":"pt", "Romanian":"ro", "Russian":"ru", "Sinhala":"si", "Slovak":"sk", "Slovenian":"sl", "Spanish":"es", "Swedish":"sv", "Tamil":"ta", "Telugu":"te", "Thai":"th", "Turkish":"tr", "Ukrainian":"uk", "Urdu":"ur", "Vietnamese":"vi", "Welsh":"cy"]
     var fromLanguage = "English"
     var toLanguage = "Spanish"
-    var currentPhraseIndex: Int = 0
+    var currentIndex: Int = 0
     
     let phrases: [String] = [
         "How are you?",
@@ -26,26 +32,19 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
         "How much does this cost?"
     ]
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return phrases.count // How many cells to display
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
-        myCell.backgroundColor = UIColor.gray
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        label.center = CGPoint(x: 160, y: 285)
-        label.textAlignment = .center
-        label.text = "I'm a test label"
-        self.view.addSubview(label)
-        return myCell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       print("User tapped on item \(indexPath.row)")
-    }
-    
-    
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return phrases.count // How many cells to display
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
+//        myCell.backgroundColor = UIColor.white
+//        return myCell
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//       print("User tapped on item \(indexPath.row)")
+//    }
 
     func translate(to: String, from: String, input: String) -> String? {
         var output = ""
@@ -67,8 +66,6 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
         return output
     }
     
-    
-    
     var translations = [String]()
     
     func getPhrases() -> [String] {
@@ -78,15 +75,30 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
         return translations
     }
     
-    func getInput() {
-        
+    @IBAction func nextPhrase(_ sender: UIButton) {
+        currentIndex += 1
+        if currentIndex == phrases.count {
+            currentIndex = 0
+        }
+        let phrase: String = phrases[currentIndex]
+        let translation: String = translations[currentIndex]
+        fromText.text = phrase
+        toText.text = translation
+    }
+    
+    func updateLabels() {
+        fromLabel.text = fromLanguage
+        toLabel.text = toLanguage
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        collectionView.backgroundColor = UIColor.lightGray
-//        translations = getPhrases()
-//
+        updateLabels()
+        translations = getPhrases()
+        fromText.text = phrases[currentIndex]
+        toText.text = translations[currentIndex]
+
+
 //        let view = UIView()
 //        view.backgroundColor = .white
 //
@@ -101,9 +113,10 @@ class PhrasesViewController: UIViewController, UICollectionViewDelegate, UIColle
 //        collectionView?.delegate = self
 //
 //        view.addSubview(collectionView ?? UICollectionView())
+//        collectionView.backgroundColor = UIColor.lightGray
+//
 //
 //        self.view = view
     }
-    
 
 }

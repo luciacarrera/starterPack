@@ -1,3 +1,4 @@
+// Translator
 //
 //  TranslateViewController.swift
 //  starterPack
@@ -59,6 +60,13 @@ class TranslateViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputTextView.layer.borderColor = UIColor.black.cgColor
+        inputTextView.layer.borderWidth = 1.0
+        inputTextView.layer.cornerRadius = 8
+        transView.layer.borderColor = UIColor.black.cgColor
+        transView.layer.borderWidth = 1.0
+        transView.layer.cornerRadius = 8
+        
         updateLabels()
     }
     
@@ -67,10 +75,10 @@ class TranslateViewController: UIViewController {
         toLabel.text = toLanguage
     }
     
-    @IBAction func swapLanguages() {
-        fromLanguage = "English"
-        toLanguage = "Spanish"
-    }
+//    @IBAction func swapLanguages() {
+//        fromLanguage = "English"
+//        toLanguage = "Spanish"
+//    }
     
     func getInput() -> String? {
         let input = inputTextView.text
