@@ -10,8 +10,8 @@ import UIKit
 class profileSetupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var homeCountryField: UITextField!
     @IBOutlet var timeZoneField: UITextField!
-    @IBOutlet var currencyField: UITextField!
     @IBOutlet var languageField: UITextField!
+    @IBOutlet var currencyField: UITextField!
     @IBOutlet var clothingField: UITextField!
     @IBOutlet var americanTimeZoneField: UITextField!
 
@@ -26,7 +26,7 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
         }
         // else, run segue
         else {
-            performSegue(withIdentifier: "userDone", sender: nil)
+            //performSegue(withIdentifier: "userDone", sender: nil)
         }
             
     }
