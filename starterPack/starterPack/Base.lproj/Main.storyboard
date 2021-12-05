@@ -27,7 +27,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="134.5" height="64"/>
                                                 <accessibility key="accessibilityConfiguration" label="temperature converter"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <state key="normal" image="thermometer.snowflake" catalog="system">
+                                                <state key="normal" image="temp">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
                                                 </state>
                                                 <connections>
@@ -1066,7 +1066,6 @@
         <image name="eis" width="1280" height="1280"/>
         <image name="sls" width="1515" height="2018"/>
         <image name="temp" width="973" height="512"/>
-        <image name="thermometer.snowflake" catalog="system" width="119" height="128"/>
         <image name="warning" width="973" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
