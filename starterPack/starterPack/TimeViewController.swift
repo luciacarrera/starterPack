@@ -63,6 +63,7 @@ class TimeViewController: UIViewController {
         let hDate = dateFormatter.string(from: date)
         homeTime.text = hTime
         homeDate.text = hDate
+        print(hDate <  vDate)
 
         /* DIFFERENCE LABEL */
         // initialization of var to print out
@@ -72,12 +73,12 @@ class TimeViewController: UIViewController {
         if let hHour = Int(hTime.prefix(2)), let vHour = Int(vTime.prefix(2)){
             // math part
             var diff = 0
-            if hDate > vDate{
+            if hDate <  vDate{
                 diff = 24 - vHour + hHour
             }else if vDate > hDate{
                 diff = 24 - hHour + vHour
             }
-            else if hHour < vHour{
+            else if hHour > vHour{
                 diff = hHour - vHour
             }else{
                 diff = vHour - hHour
