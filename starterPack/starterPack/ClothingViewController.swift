@@ -7,12 +7,7 @@
 
 import UIKit
 
-// TODO make whole shoe sizes display without .0
-// establish view so compnents dont move when they get change length
-
-class ClothingViewController: UIViewController {
-
-    var user: User!
+class ClothingViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +20,8 @@ class ClothingViewController: UIViewController {
         
         shirtPicker.dataSource = self
         shirtPicker.delegate = self
-        // Do any additional setup after loading the view.
     }
-    
+        
     // establish variables
     @IBOutlet var shoePicker: UIPickerView!
     @IBOutlet var USShoeSize: UILabel!
@@ -37,15 +31,71 @@ class ClothingViewController: UIViewController {
     
     @IBOutlet var pantPicker: UIPickerView!
     @IBOutlet var USPantSize: UILabel!
-    var ukPants = [32, 34, 36, 38, 40, 42, 44, 46, 48]
-    var pantSizeConversions = [32:4, 34:6, 36:8, 38:10, 40:12, 42:14, 44:16, 46:18, 48:20]
+    
+    // corresponding lists of various sizing systems
+    var ukSizes = ["4", "6", "8", "10", "12", "14", "16", "18", "20", "22", "24", "26"]
+    var euSizes = ["32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"]
+    var jpnSizes = ["5", "7", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27"]
+    var ausSizes = ["6", "8", "10", "12", "14", "16", "18", "20", "22", "24", "26", "28"]
+    var internSizes = ["xs", "xs", "s", "s", "m", "m", "l", "l", "xl", "xl", "xxl", "xxl"]
+    
+    var user: User!
+    
+    var homeCountrySizes = [String]()
+    // assign home sizing system
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if (user.homeCountry == "Canada") {
+            homeCountrySizes = usSizes
+        }
+        else if (user.homeCountry == "United Kingdom") {
+            homeCountrySizes = ukSizes
+        }
+        else if (user.homeCountry == "Germany" || user.homeCountry == "France")  { // add any other EU countries
+            homeCountrySizes = euSizes
+        }
+        else if (user.homeCountry == "Japan") {
+            homeCountrySizes = jpnSizes
+        }
+        else if (user.homeCountry == "Australia") {
+            homeCountrySizes = ausSizes
+        }
+        else  { // use international sizes
+            homeCountrySizes = internSizes
+        }
+    }
+    
+    
+    /*
+    if (user.homeCountry == "Canada") {
+        homeCountrySizes = usSizes
+    }
+    else if (user.homeCountry == "United Kingdom") {
+        homeCountrySizes = ukSizes
+    }
+    else if (user.homeCountry == "Germany" || user.homeCountry == "France")  { // add any other EU countries
+        homeCountrySizes = euSizes
+    }
+    else if (user.homeCountry == "Japan") {
+        homeCountrySizes = jpnSizes
+    }
+    else if (user.homeCountry == "Australia") {
+        homeCountrySizes = ausSizes
+    }
+    else  { // use international sizes
+        homeCountrySizes = internSizes
+    }
+     */
+    
+    // US sizing list to compare to
+    var usSizes = ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "22", "24"]
+    
     
     @IBOutlet var shirtPicker: UIPickerView!
     @IBOutlet var USShirtSize: UILabel!
     var ukShirts = ["S", "M", "L", "XL"]
     var shirtSizeConversions = ["S":"XS", "M":"S", "L":"M", "XL":"L"]
-    
-  
 }
 
 extension ClothingViewController: UIPickerViewDataSource {
@@ -58,7 +108,7 @@ extension ClothingViewController: UIPickerViewDataSource {
             return ukShoes.count
         }
         else if pickerView.tag == 2 {
-            return ukPants.count
+            return usSizes.count
         }
         else if pickerView.tag == 3 {
             return ukShirts.count
@@ -72,7 +122,7 @@ extension ClothingViewController: UIPickerViewDataSource {
             USShoeSize.text = String(shoeSizeConversions[ukShoes[row]]!)
         }
         else if pickerView.tag == 2 {
-            USPantSize.text = String(pantSizeConversions[ukPants[row]]!)
+            USPantSize.text = String(usSizes[row])
         }
         else if pickerView.tag == 3 {
             USShirtSize.text = shirtSizeConversions[ukShirts[row]]
@@ -86,7 +136,7 @@ extension ClothingViewController: UIPickerViewDelegate{
             return String(ukShoes[row])
         }
         else if pickerView.tag == 2 {
-            return String(ukPants[row])
+            return String(homeCountrySizes[row])
         }
         else if pickerView.tag == 3 {
             return ukShirts[row]

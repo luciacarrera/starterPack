@@ -31,7 +31,7 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var homeContryPicker: UIPickerView!
-    var homeCountryOptions = ["China", "India", "Indonesia", "Pakistan", "Brazil", "Nigeria", "Bangladesh", "Russia", "Mexico", "Japan", "Ethiopia", "Phillipines", "Egypt", "Vietnam", "Iran", "Turkey", "Germany", "Spain", "France", "United Kingdom", "Canada", "South Africa", "Italy", "South Korea", "Australia"]
+    var homeCountryOptions = ["United Kingdom",  "France", "Spain",  "Canada", "Japan", "Australia", "China",  "Germany", "India", "Indonesia", "Pakistan", "Brazil", "Nigeria", "Bangladesh", "Russia", "Mexico",  "Ethiopia", "Phillipines", "Egypt", "Vietnam", "Iran", "Turkey", "South Africa", "Italy", "South Korea"]
     
     @IBOutlet var timeZonePicker: UIPickerView!
     var timeZoneOptions = ["AKDT", "HST", "PST", "MST", "CST", "EST", "EGT", "CET", "IST", "MSK", "WET", "GET", "HKT", "IRDT", "JST", "MMT", "NPT", "PHT", "KST", "CAT", "WAST", "AST"]
