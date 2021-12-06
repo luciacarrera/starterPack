@@ -1039,7 +1039,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pgK-eV-007">
-                                <rect key="frame" x="87" y="138" width="240" height="374"/>
+                                <rect key="frame" x="87" y="178" width="240" height="334"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2if-o7-Svm">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="67.5"/>
@@ -1065,11 +1065,11 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L01-ZH-Hnr">
-                                        <rect key="frame" x="0.0" y="97.5" width="240" height="179"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="240" height="139"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-he-3y4">
-                                        <rect key="frame" x="0.0" y="306.5" width="240" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="266.5" width="240" height="67.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="32" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8c-7j-Buu">
                                                 <rect key="frame" x="0.0" y="0.0" width="165.5" height="67.5"/>
@@ -1102,8 +1102,8 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="pgK-eV-007" firstAttribute="centerX" secondItem="e6Q-nA-AGn" secondAttribute="centerX" id="2y2-w8-lVp"/>
-                            <constraint firstItem="pgK-eV-007" firstAttribute="top" secondItem="Aw6-nM-6Gg" secondAttribute="top" constant="50" id="Can-Le-L3W"/>
                             <constraint firstItem="Aw6-nM-6Gg" firstAttribute="bottom" secondItem="pgK-eV-007" secondAttribute="bottom" constant="350" id="TGc-jb-C3e"/>
+                            <constraint firstItem="pgK-eV-007" firstAttribute="top" secondItem="Aw6-nM-6Gg" secondAttribute="top" constant="90" id="Xv9-tc-fP4"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="hat-4h-jj6" appends="YES" id="pfF-xc-KQ0"/>
@@ -1132,81 +1132,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The United Kingdom of Great Britain and Northern Ireland is 36 hours ahead" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-me-ufa">
-                                <rect key="frame" x="0.0" y="759" width="414" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="In Village of Grosse Pointe Shores city it is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-bG-oaf">
-                                <rect key="frame" x="0.0" y="180" width="414" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday, November 24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Koh-Ic-4k3">
-                                <rect key="frame" x="0.0" y="265.5" width="414" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="In Village of Grosse Pointe Shores city it is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrs-81-hEZ">
-                                <rect key="frame" x="0.0" y="374.5" width="414" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday, November 24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kX-iT-DiG">
-                                <rect key="frame" x="0.0" y="460" width="414" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HH:mm am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caf-S9-1ac">
-                                <rect key="frame" x="0.0" y="208.5" width="414" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HH:mm am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lD-T8-1k1">
-                                <rect key="frame" x="0.0" y="403" width="414" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World Clock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNF-KF-NZl">
-                                <rect key="frame" x="121" y="138" width="172" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dK1-vy-fml">
+                                <rect key="frame" x="20" y="178" width="374" height="594"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8UJ-zW-qo2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="90"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Village of Grosse Pointe Shores city it is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-bG-oaf">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH:mm am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caf-S9-1ac">
+                                                <rect key="frame" x="0.0" y="20.5" width="374" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, November 24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Koh-Ic-4k3">
+                                                <rect key="frame" x="0.0" y="69.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDR-Hp-khQ">
+                                        <rect key="frame" x="0.0" y="110" width="374" height="140.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CXH-sD-hJh">
+                                        <rect key="frame" x="0.0" y="270.5" width="374" height="90"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Village of Grosse Pointe Shores city it is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrs-81-hEZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH:mm am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lD-T8-1k1">
+                                                <rect key="frame" x="0.0" y="20.5" width="374" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, November 24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kX-iT-DiG">
+                                                <rect key="frame" x="0.0" y="69.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-Uy-i5O">
+                                        <rect key="frame" x="0.0" y="380.5" width="374" height="140.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The United Kingdom of Great Britain and Northern Ireland is 36 hours ahead" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-me-ufa">
+                                        <rect key="frame" x="0.0" y="541" width="374" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9iY-Uy-i5O" firstAttribute="height" secondItem="fDR-Hp-khQ" secondAttribute="height" id="vEf-Bq-cfr"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RJX-8j-wsA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RJX-8j-wsA" firstAttribute="trailing" secondItem="KDd-bG-oaf" secondAttribute="trailing" id="0vp-iR-ucF"/>
-                            <constraint firstAttribute="rightMargin" secondItem="2kX-iT-DiG" secondAttribute="right" constant="-20" id="4Dg-qe-6qe"/>
-                            <constraint firstItem="Koh-Ic-4k3" firstAttribute="top" secondItem="caf-S9-1ac" secondAttribute="bottom" constant="8" id="4uW-3o-vmp"/>
-                            <constraint firstItem="Koh-Ic-4k3" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="ABB-14-lTT"/>
-                            <constraint firstItem="Hrs-81-hEZ" firstAttribute="top" secondItem="Koh-Ic-4k3" secondAttribute="bottom" constant="88" id="ADb-Nx-VGc"/>
-                            <constraint firstItem="7lD-T8-1k1" firstAttribute="top" secondItem="Hrs-81-hEZ" secondAttribute="bottom" constant="8" id="FlM-Hj-xAU"/>
-                            <constraint firstItem="caf-S9-1ac" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="JwK-Iq-XtK"/>
-                            <constraint firstItem="caf-S9-1ac" firstAttribute="top" secondItem="KDd-bG-oaf" secondAttribute="bottomMargin" constant="16" id="QDN-5Y-pLI"/>
-                            <constraint firstItem="2kX-iT-DiG" firstAttribute="top" secondItem="7lD-T8-1k1" secondAttribute="bottom" constant="8" id="WaW-Vt-s4H"/>
-                            <constraint firstItem="RJX-8j-wsA" firstAttribute="bottom" secondItem="FsM-me-ufa" secondAttribute="bottom" constant="50" id="ZVk-HN-8Ex"/>
-                            <constraint firstItem="KDd-bG-oaf" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="ZcH-3P-Uw7"/>
-                            <constraint firstItem="JNF-KF-NZl" firstAttribute="top" secondItem="RJX-8j-wsA" secondAttribute="top" constant="50" id="cY6-sw-Mfd"/>
-                            <constraint firstItem="FsM-me-ufa" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="cZr-Vp-RmX"/>
-                            <constraint firstItem="7lD-T8-1k1" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="egj-SD-o4p"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Hrs-81-hEZ" secondAttribute="trailing" constant="-20" id="evx-cc-Xgf"/>
-                            <constraint firstItem="Hrs-81-hEZ" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="jmG-nL-sMV"/>
-                            <constraint firstAttribute="trailing" secondItem="7lD-T8-1k1" secondAttribute="trailing" id="nCT-E4-rUr"/>
-                            <constraint firstAttribute="right" secondItem="caf-S9-1ac" secondAttribute="rightMargin" constant="8" id="pES-uE-PqJ"/>
-                            <constraint firstAttribute="right" secondItem="Koh-Ic-4k3" secondAttribute="rightMargin" constant="8" id="pL5-1l-4dR"/>
-                            <constraint firstAttribute="rightMargin" secondItem="FsM-me-ufa" secondAttribute="right" constant="-20" id="qaY-5K-kJs"/>
-                            <constraint firstItem="JNF-KF-NZl" firstAttribute="centerX" secondItem="VzQ-dt-USy" secondAttribute="centerX" id="ufi-0V-Whd"/>
-                            <constraint firstItem="2kX-iT-DiG" firstAttribute="left" secondItem="VzQ-dt-USy" secondAttribute="leftMargin" constant="-20" id="w1l-VH-caf"/>
+                            <constraint firstAttribute="trailing" secondItem="dK1-vy-fml" secondAttribute="trailing" constant="20" id="CwI-Jl-0Pj"/>
+                            <constraint firstItem="dK1-vy-fml" firstAttribute="leading" secondItem="RJX-8j-wsA" secondAttribute="leading" constant="20" id="f7p-FU-pmp"/>
+                            <constraint firstItem="RJX-8j-wsA" firstAttribute="bottom" secondItem="dK1-vy-fml" secondAttribute="bottom" constant="90" id="hDc-Wu-74L"/>
+                            <constraint firstItem="dK1-vy-fml" firstAttribute="top" secondItem="RJX-8j-wsA" secondAttribute="top" constant="90" id="lvt-lm-RSq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="C2b-g7-C6J"/>
