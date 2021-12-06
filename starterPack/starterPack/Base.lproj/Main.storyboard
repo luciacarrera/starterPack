@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hag-78-rcW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hag-78-rcW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -255,7 +255,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtS-if-HRj">
-                                                <rect key="frame" x="121" y="0.0" width="273" height="62"/>
+                                                <rect key="frame" x="121" y="0.0" width="273" height="61.5"/>
                                             </pickerView>
                                         </subviews>
                                     </stackView>
@@ -789,8 +789,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2as-rD-mDP">
-                                <rect key="frame" x="20" y="239" width="374" height="364"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2as-rD-mDP">
+                                <rect key="frame" x="20" y="178" width="374" height="545"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wZm-jz-SCd">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="46"/>
@@ -815,8 +815,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITs-vg-cdq">
                                                 <rect key="frame" x="324" y="0.0" width="50" height="46"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="6cX-5q-rxy"/>
-                                                    <constraint firstAttribute="height" constant="46" id="nkP-GO-uUE"/>
+                                                    <constraint firstAttribute="width" constant="50" id="dJV-yT-c6Y"/>
                                                 </constraints>
                                                 <state key="normal">
                                                     <imageReference key="image" image="phone" catalog="system" symbolScale="large"/>
@@ -827,8 +826,12 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOv-f8-eYY">
+                                        <rect key="frame" x="0.0" y="59" width="374" height="180.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gXt-bi-xgu">
-                                        <rect key="frame" x="0.0" y="159" width="374" height="46"/>
+                                        <rect key="frame" x="0.0" y="249.5" width="374" height="46"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pv3-sC-Yn8">
                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="46"/>
@@ -850,7 +853,7 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-TA-1md">
                                                 <rect key="frame" x="324" y="0.0" width="50" height="46"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="cmp-Q2-dsc"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Urn-Hc-VDH"/>
                                                 </constraints>
                                                 <state key="normal">
                                                     <imageReference key="image" image="phone" catalog="system" symbolScale="large"/>
@@ -861,8 +864,12 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-rz-sZ8">
+                                        <rect key="frame" x="0.0" y="308.5" width="374" height="180.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8X4-Aw-b8q">
-                                        <rect key="frame" x="0.0" y="318" width="374" height="46"/>
+                                        <rect key="frame" x="0.0" y="499" width="374" height="46"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pPo-Hv-zxO">
                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="46"/>
@@ -884,7 +891,7 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMH-72-ipx">
                                                 <rect key="frame" x="324" y="0.0" width="50" height="46"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="e85-kk-yCD"/>
+                                                    <constraint firstAttribute="width" constant="50" id="hxh-hJ-RaA"/>
                                                 </constraints>
                                                 <state key="normal">
                                                     <imageReference key="image" image="phone" catalog="system" symbolScale="large"/>
@@ -896,18 +903,23 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="gXt-bi-xgu" firstAttribute="centerY" secondItem="2as-rD-mDP" secondAttribute="centerY" id="POB-HO-coF"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NmU-9a-lmC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2as-rD-mDP" firstAttribute="leading" secondItem="NmU-9a-lmC" secondAttribute="leading" constant="20" id="3lq-Y8-KFd"/>
-                            <constraint firstItem="NmU-9a-lmC" firstAttribute="trailing" secondItem="2as-rD-mDP" secondAttribute="trailing" constant="20" id="89t-yF-2pF"/>
-                            <constraint firstItem="2as-rD-mDP" firstAttribute="centerX" secondItem="nTY-T5-Qhk" secondAttribute="centerX" id="lU9-Lw-pE7"/>
-                            <constraint firstItem="2as-rD-mDP" firstAttribute="centerY" secondItem="nTY-T5-Qhk" secondAttribute="centerY" id="rQE-9T-i9b"/>
+                            <constraint firstItem="2as-rD-mDP" firstAttribute="top" secondItem="NmU-9a-lmC" secondAttribute="top" constant="90" id="XBo-0X-e49"/>
+                            <constraint firstItem="2as-rD-mDP" firstAttribute="leading" secondItem="NmU-9a-lmC" secondAttribute="leading" constant="20" id="ePu-5d-lTy"/>
+                            <constraint firstItem="NmU-9a-lmC" firstAttribute="trailing" secondItem="2as-rD-mDP" secondAttribute="trailing" constant="20" id="ecW-0T-Z0P"/>
+                            <constraint firstItem="NmU-9a-lmC" firstAttribute="bottom" secondItem="2as-rD-mDP" secondAttribute="bottom" constant="90" id="gR2-Bc-4hH"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="2i6-KN-njv"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BtnEmergency" destination="ITs-vg-cdq" id="5dF-s4-WKh"/>
                         <outlet property="BtnLucia" destination="PMH-72-ipx" id="K9Q-Ud-2ww"/>
@@ -916,7 +928,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMf-eB-xMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-692" y="1133.8830584707648"/>
+            <point key="canvasLocation" x="-692.75362318840587" y="1133.7053571428571"/>
         </scene>
         <!--Clothing View Controller-->
         <scene sceneID="1dD-cM-a73">
