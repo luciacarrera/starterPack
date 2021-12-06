@@ -42,8 +42,8 @@ class ClothingViewController: UIViewController {
     
     @IBOutlet var shirtPicker: UIPickerView!
     @IBOutlet var USShirtSize: UILabel!
-    var ukShirts = ["small", "medium", "large", "xtra large"]
-    var shirtSizeConversions = ["small":"xtra small", "medium":"small", "large":"medium", "xtra large":"large"]
+    var ukShirts = ["S", "M", "L", "XL"]
+    var shirtSizeConversions = ["S":"XS", "M":"S", "L":"M", "XL":"L"]
     
   
 }
