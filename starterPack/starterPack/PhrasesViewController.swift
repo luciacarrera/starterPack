@@ -8,6 +8,11 @@
 import UIKit
 import LanguageTranslatorV3
 
+
+class phrasesViewCell: UICollectionViewCell {
+    @IBOutlet weak var myLabel: UILabel!
+}
+
 class PhrasesViewController: UIViewController {
 //    , UICollectionViewDelegate, UICollectionViewDataSource
     
@@ -21,7 +26,7 @@ class PhrasesViewController: UIViewController {
     let transLanguages = ["Arabic":"ar", "Bengali":"bn", "Bosnian":"bs", "Bulgarian":"bg", "Chinese (Simplified)":"zh", "Chinese (Traditional)":"zh-TW", "Croatian":"hr", "Czech":"cs", "Danish":"da", "Dutch":"nl", "English":"en", "Estonian":"et", "Finnish":"fi", "French":"fr", "German":"de", "Greek":"el", "Gujarati":"gu", "Hebrew":"he", "Hindi":"hi", "Hungarian":"hu", "Irish":"ga", "Indonesian":"id", "Italian":"it", "Japanese":"ja", "Korean":"ko", "Latvian":"lv", "Lithuanian":"lt", "Malay":"ms", "Malayalam":"ml", "Maltese":"mt", "Nepali":"ne", "Norwegian Bokmål":"nb", "Polish":"pl", "Portuguese":"pt", "Romanian":"ro", "Russian":"ru", "Sinhala":"si", "Slovak":"sk", "Slovenian":"sl", "Spanish":"es", "Swedish":"sv", "Tamil":"ta", "Telugu":"te", "Thai":"th", "Turkish":"tr", "Ukrainian":"uk", "Urdu":"ur", "Vietnamese":"vi", "Welsh":"cy"]
     var fromLanguage = "English"
     var toLanguage = "Spanish"
-    var currentIndex: Int = 0
+    var currentPhraseIndex: Int = 0
     
     let phrases: [String] = [
         "How are you?",
@@ -75,29 +80,13 @@ class PhrasesViewController: UIViewController {
         return translations
     }
     
-    @IBAction func nextPhrase(_ sender: UIButton) {
-        currentIndex += 1
-        if currentIndex == phrases.count {
-            currentIndex = 0
-        }
-        let phrase: String = phrases[currentIndex]
-        let translation: String = translations[currentIndex]
-        fromText.text = phrase
-        toText.text = translation
-    }
-    
-    func updateLabels() {
-        fromLabel.text = fromLanguage
-        toLabel.text = toLanguage
+    func getInput() {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateLabels()
-        translations = getPhrases()
-        fromText.text = phrases[currentIndex]
-        toText.text = translations[currentIndex]
-
+//        translations = getPhrases()
 
 //        let view = UIView()
 //        view.backgroundColor = .white

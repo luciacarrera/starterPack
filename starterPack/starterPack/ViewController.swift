@@ -18,12 +18,7 @@ class mainViewController: UIViewController {
     // establish user variable to store all user data
     var user: User!
     
-    // do i need this???
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    
+
     
     //initialize label and buttons
     @IBOutlet var temperatureButton: UIButton!
@@ -34,8 +29,9 @@ class mainViewController: UIViewController {
     @IBOutlet var clothingButton: UIButton!
     @IBOutlet var phrasesButton: UIButton!
     @IBOutlet var translateButton: UIButton!
-    @IBOutlet var emergencyButton: UIButton!
 
+    @IBOutlet var emergencyBtn: UIImageView!
+    
     // pass user to other view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

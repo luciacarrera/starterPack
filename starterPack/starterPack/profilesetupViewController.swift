@@ -8,46 +8,28 @@
 import UIKit
 
 class profileSetupViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet var homeCountryField: UITextField!
+    @IBOutlet var timeZoneField: UITextField!
+    @IBOutlet var languageField: UITextField!
+    @IBOutlet var currencyField: UITextField!
+    @IBOutlet var clothingField: UITextField!
+    @IBOutlet var americanTimeZoneField: UITextField!
+
     
-    override func viewDidLoad() {
-        homeContryPicker.dataSource = self
-        homeContryPicker.delegate = self
-        
-        timeZonePicker.dataSource = self
-        timeZonePicker.delegate = self
-        
-        langugePicker.dataSource = self
-        langugePicker.delegate = self
-        
-        currencyPicker.dataSource = self
-        currencyPicker.delegate = self
-        
-        clothingPicker.dataSource = self
-        clothingPicker.delegate = self
-        
-        americanTimeZonePicker.dataSource = self
-        americanTimeZonePicker.delegate = self
+    @IBAction func done(_ sender: UIButton) {
+        // check data
+        if homeCountryField.text == "" || timeZoneField.text == "" || currencyField.text == "" || languageField.text == "" || clothingField.text == "" || americanTimeZoneField.text == "" {
+            // if incomplete data, pop alert
+            let alertcontroller = UIAlertController(title: "Incomplete Data", message: "please fill out all fields", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alertcontroller.addAction(okAction)
+            present(alertcontroller, animated: true, completion: nil)
+        }
+        // else, run segue
+        else {
+            // dont do anything
+        }
     }
-    
-    
-    @IBOutlet var homeContryPicker: UIPickerView!
-    var homeCountryOptions = ["USA", "Spain", "France", "Canada"]
-    
-    @IBOutlet var timeZonePicker: UIPickerView!
-    var timeZoneOptions = ["PST", "MST", "CST", "EST", "other time zone"]
-    
-    @IBOutlet var langugePicker: UIPickerView!
-    var langugeOptions = ["English", "Spanish", "French", "Mandarin"]
-    
-    @IBOutlet var currencyPicker: UIPickerView!
-    var currencyOptions = ["USD", "Euro", "Yen"]
-    
-    @IBOutlet var clothingPicker: UIPickerView!
-    var clothingOptions = ["US sizing", "Euro sizing", "??"]
-
-    @IBOutlet var americanTimeZonePicker: UIPickerView!
-    var americanTimeZoneOptions = ["PST", "MST", "CST", "EST"]
-
 
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
@@ -58,112 +40,32 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let homeCountryIndex = homeCountryOptions.firstIndex(of: user.homeCountry){
-            homeContryPicker.selectRow(homeCountryIndex, inComponent: 0, animated: true)
-        }
-        if let timeZoneIndex = timeZoneOptions.firstIndex(of: user.timeZone){
-            timeZonePicker.selectRow(timeZoneIndex, inComponent: 0, animated: true)
-        }
-        if let langugeIndex = langugeOptions.firstIndex(of: user.language){
-            langugePicker.selectRow(langugeIndex, inComponent: 0, animated: true)
-        }
-        if let currencyIndex = currencyOptions.firstIndex(of: user.currency){
-            currencyPicker.selectRow(currencyIndex, inComponent: 0, animated: true)
-        }
-        if let clothingIndex = clothingOptions.firstIndex(of: user.clothing){
-            clothingPicker.selectRow(clothingIndex, inComponent: 0, animated: true)
-        }
-        if let americanTimeZoneIndex = americanTimeZoneOptions.firstIndex(of: user.americanTimeZone){
-            americanTimeZonePicker.selectRow(americanTimeZoneIndex, inComponent: 0, animated: true)
-        }
+        homeCountryField.text = user.homeCountry
+        timeZoneField.text = user.timeZone
+        currencyField.text = user.currency
+        languageField.text = user.language
+        clothingField.text = user.clothing
+        americanTimeZoneField.text = user.americanTimeZone
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         view.endEditing(true)
-
+        // "save" changes made to an item
+        user.homeCountry = homeCountryField.text ?? ""
+        user.timeZone = timeZoneField.text ?? ""
+        user.currency = currencyField.text ?? ""
+        user.language = languageField.text ?? ""
+        user.clothing = clothingField.text ?? ""
+        user.americanTimeZone = americanTimeZoneField.text ?? ""
+        
         print(user.homeCountry)
         print(user.timeZone)
-        print(user.language)
         print(user.currency)
+        print(user.language)
         print(user.clothing)
         print(user.americanTimeZone)
     }
-}
-
-extension profileSetupViewController: UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView.tag == 1 {
-            return homeCountryOptions.count
-        }
-        else if pickerView.tag == 2 {
-            return timeZoneOptions.count
-        }
-        else if pickerView.tag == 3 {
-            return langugeOptions.count
-        }
-        else if pickerView.tag == 4 {
-            return currencyOptions.count
-        }
-        else if pickerView.tag == 5 {
-            return clothingOptions.count
-        }
-        else if pickerView.tag == 6 {
-            return americanTimeZoneOptions.count
-        }
-        else {
-            return 0
-        }
-    }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if pickerView.tag == 1 {
-            user.homeCountry = homeCountryOptions[row]
-        }
-        else if pickerView.tag == 2 {
-            user.timeZone = timeZoneOptions[row]
-        }
-        else if pickerView.tag == 3 {
-            user.language = langugeOptions[row]
-        }
-        else if pickerView.tag == 4 {
-            user.currency = currencyOptions[row]
-        }
-        else if pickerView.tag == 5 {
-            user.clothing = clothingOptions[row]
-        }
-        else if pickerView.tag == 6 {
-            user.americanTimeZone = americanTimeZoneOptions[row]
-        }
-    }
-}
-extension profileSetupViewController: UIPickerViewDelegate{
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    
-        if pickerView.tag == 1 {
-            return homeCountryOptions[row]
-        }
-        else if pickerView.tag == 2 {
-            return timeZoneOptions[row]
-        }
-        else if pickerView.tag == 3 {
-            return langugeOptions[row]
-        }
-        else if pickerView.tag == 4 {
-            return currencyOptions[row]
-        }
-        else if pickerView.tag == 5 {
-            return clothingOptions[row]
-        }
-        else if pickerView.tag == 6 {
-            return americanTimeZoneOptions[row]
-        }
-        else {
-            return "???"
-        }
-    }
 }
