@@ -31,22 +31,22 @@ class profileSetupViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var homeContryPicker: UIPickerView!
-    var homeCountryOptions = ["USA", "Spain", "France", "Canada"]
+    var homeCountryOptions = ["China", "India", "Indonesia", "Pakistan", "Brazil", "Nigeria", "Bangladesh", "Russia", "Mexico", "Japan", "Ethiopia", "Phillipines", "Egypt", "Vietnam", "Iran", "Turkey", "Germany", "Spain", "France", "United Kingdom", "Canada", "South Africa", "Italy", "South Korea", "Australia"]
     
     @IBOutlet var timeZonePicker: UIPickerView!
-    var timeZoneOptions = ["PST", "MST", "CST", "EST", "other time zone"]
+    var timeZoneOptions = ["AKDT", "HST", "PST", "MST", "CST", "EST", "EGT", "CET", "IST", "MSK", "WET", "GET", "HKT", "IRDT", "JST", "MMT", "NPT", "PHT", "KST", "CAT", "WAST", "AST"]
     
     @IBOutlet var langugePicker: UIPickerView!
-    var langugeOptions = ["English", "Spanish", "French", "Mandarin"]
+    var langugeOptions = ["Arabic", "Bengali", "Bosnian", "Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Estonian", "Finnish", "French", "German", "Greek", "Gujarati", "Hebrew", "Hindi", "Hungarian", "Irish", "Indonesian", "Italian", "Japanese", "Korean", "Latvian", "Lithuanian", "Malay", "Malayalam", "Maltese", "Nepali", "Norwegian Bokmål", "Polish", "Portuguese", "Romanian", "Russian", "Sinhala", "Slovak", "Slovenian", "Spanish", "Swedish", "Tamil", "Telugu", "Thai", "Turkish", "Ukrainian", "Urdu", "Vietnamese", "Welsh"]
     
     @IBOutlet var currencyPicker: UIPickerView!
     var currencyOptions = ["USD", "Euro", "Yen"]
     
     @IBOutlet var clothingPicker: UIPickerView!
-    var clothingOptions = ["US sizing", "Euro sizing", "??"]
+    var clothingOptions = ["US sizing", "Euro sizing"]
 
     @IBOutlet var americanTimeZonePicker: UIPickerView!
-    var americanTimeZoneOptions = ["PST", "MST", "CST", "EST"]
+    var americanTimeZoneOptions = ["AKDT", "HST", "PST", "MST", "CST", "EST"]
 
 
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {

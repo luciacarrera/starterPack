@@ -13,6 +13,7 @@ class CurrencyViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var euroTextField: UITextField!
     @IBOutlet var dollarTextField: UITextField!
+    
     var dollarValue: Measurement<Unit>? {
         didSet {
             updateEuroText()
