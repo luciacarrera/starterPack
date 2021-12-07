@@ -292,7 +292,6 @@
                         <constraints>
                             <constraint firstItem="E3r-WV-d2G" firstAttribute="leading" secondItem="If7-Gh-UaD" secondAttribute="leading" constant="10" id="0AC-Vx-7c3"/>
                             <constraint firstItem="If7-Gh-UaD" firstAttribute="bottom" secondItem="E3r-WV-d2G" secondAttribute="bottom" constant="10" id="Fjr-Zv-zYb"/>
-                            <constraint firstItem="E3r-WV-d2G" firstAttribute="centerY" secondItem="YsM-f0-mk0" secondAttribute="centerY" id="KsZ-4Y-W9t"/>
                             <constraint firstItem="If7-Gh-UaD" firstAttribute="trailing" secondItem="E3r-WV-d2G" secondAttribute="trailing" constant="10" id="MJB-Ff-RrK"/>
                             <constraint firstItem="E3r-WV-d2G" firstAttribute="centerX" secondItem="YsM-f0-mk0" secondAttribute="centerX" id="VgZ-bL-0G3"/>
                             <constraint firstItem="E3r-WV-d2G" firstAttribute="top" secondItem="If7-Gh-UaD" secondAttribute="top" constant="10" id="vK6-sL-Gl7"/>
