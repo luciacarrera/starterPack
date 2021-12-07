@@ -61,8 +61,11 @@ class TimeViewController: UIViewController {
         dateFormatter.timeZone = TimeZone(abbreviation: homeTimeZone)
         let hTime = timeFormatter.string(from: date).lowercased()
         let hDate = dateFormatter.string(from: date)
+
+        
         homeTime.text = hTime
         homeDate.text = hDate
+        
         print(hDate <  vDate)
 
         /* DIFFERENCE LABEL */

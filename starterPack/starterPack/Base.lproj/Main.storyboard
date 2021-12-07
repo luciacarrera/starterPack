@@ -567,13 +567,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JGg-UJ-gQv">
-                                <rect key="frame" x="80" y="178" width="254" height="334"/>
+                                <rect key="frame" x="20" y="178" width="314" height="334"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iGq-I0-nXY">
-                                        <rect key="frame" x="0.0" y="0.0" width="254" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="67.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6t-wP-YXo">
-                                                <rect key="frame" x="0.0" y="0.0" width="193" height="67.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6t-wP-YXo">
+                                                <rect key="frame" x="0.0" y="0.0" width="253" height="67.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                                 <connections>
@@ -582,7 +582,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n80-90-tDJ">
-                                                <rect key="frame" x="223" y="0.0" width="31" height="67.5"/>
+                                                <rect key="frame" x="283" y="0.0" width="31" height="67.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="textColor" systemColor="systemGreenColor"/>
                                                 <nil key="highlightedColor"/>
@@ -590,14 +590,14 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEA-xI-IdA">
-                                        <rect key="frame" x="0.0" y="97.5" width="254" height="139"/>
+                                        <rect key="frame" x="0.0" y="97.5" width="314" height="139"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="aSH-U2-lNg">
-                                        <rect key="frame" x="0.0" y="266.5" width="254" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="266.5" width="314" height="67.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7T8-y8-nGJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="193" height="67.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7T8-y8-nGJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="253" height="67.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                                 <connections>
@@ -606,7 +606,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-Me-BXN">
-                                                <rect key="frame" x="223" y="0.0" width="31" height="67.5"/>
+                                                <rect key="frame" x="283" y="0.0" width="31" height="67.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                 <color key="textColor" systemColor="systemGreenColor"/>
                                                 <nil key="highlightedColor"/>
@@ -615,6 +615,8 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="n80-90-tDJ" firstAttribute="leading" secondItem="Wbh-Me-BXN" secondAttribute="leading" id="W2z-8E-uwe"/>
+                                    <constraint firstItem="n6t-wP-YXo" firstAttribute="trailing" secondItem="7T8-y8-nGJ" secondAttribute="trailing" id="pjI-ea-mr4"/>
                                     <constraint firstItem="7T8-y8-nGJ" firstAttribute="width" secondItem="n6t-wP-YXo" secondAttribute="width" id="qWH-pR-SSl"/>
                                     <constraint firstItem="Wbh-Me-BXN" firstAttribute="width" secondItem="n80-90-tDJ" secondAttribute="width" id="spR-ry-JhT"/>
                                 </constraints>
@@ -624,10 +626,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="JGg-UJ-gQv" firstAttribute="leading" secondItem="Icq-5a-wyW" secondAttribute="leading" constant="80" id="AZh-MG-gsj"/>
-                            <constraint firstItem="JGg-UJ-gQv" firstAttribute="top" secondItem="Icq-5a-wyW" secondAttribute="top" constant="90" id="Dzh-Xy-o3W"/>
-                            <constraint firstItem="Icq-5a-wyW" firstAttribute="bottom" secondItem="JGg-UJ-gQv" secondAttribute="bottom" constant="350" id="id8-fp-be0"/>
-                            <constraint firstItem="Icq-5a-wyW" firstAttribute="trailing" secondItem="JGg-UJ-gQv" secondAttribute="trailing" constant="80" id="w8s-eG-KIZ"/>
+                            <constraint firstItem="Icq-5a-wyW" firstAttribute="trailing" secondItem="JGg-UJ-gQv" secondAttribute="trailing" constant="80" id="UTz-xK-oHH"/>
+                            <constraint firstItem="Icq-5a-wyW" firstAttribute="bottom" secondItem="JGg-UJ-gQv" secondAttribute="bottom" constant="350" id="Yc2-0A-s9U"/>
+                            <constraint firstItem="JGg-UJ-gQv" firstAttribute="top" secondItem="Icq-5a-wyW" secondAttribute="top" constant="90" id="dEo-NB-kFW"/>
+                            <constraint firstItem="JGg-UJ-gQv" firstAttribute="leading" secondItem="Icq-5a-wyW" secondAttribute="leading" constant="20" id="qtB-Xz-d3W"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="E2M-G1-zjg" appends="YES" id="9g7-UJ-0Br"/>
