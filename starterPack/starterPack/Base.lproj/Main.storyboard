@@ -1070,12 +1070,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="sGO-MS-cTN"/>
                     <connections>
-                        <outlet property="USPantSize" destination="HZH-cY-GhD" id="ida-ZK-X79"/>
-                        <outlet property="USShirtSize" destination="Ej4-kb-7nX" id="Gn6-8J-hte"/>
-                        <outlet property="USShoeSize" destination="PZZ-LV-2fk" id="vVu-lO-Xab"/>
-                        <outlet property="pantPicker" destination="9dy-nO-qNe" id="fvu-87-dn9"/>
-                        <outlet property="shirtPicker" destination="K7G-Z0-JN6" id="d8R-cm-myG"/>
-                        <outlet property="shoePicker" destination="12a-c3-Ucq" id="xbM-zs-MAd"/>
+                        <outlet property="USGeneralLabel" destination="Ej4-kb-7nX" id="Q1B-M0-bwZ"/>
+                        <outlet property="USShoeLabel" destination="PZZ-LV-2fk" id="a4H-v4-9eG"/>
+                        <outlet property="USSizeLabel" destination="HZH-cY-GhD" id="X4l-yS-Zrh"/>
+                        <outlet property="generalPicker" destination="K7G-Z0-JN6" id="5KY-gs-cRd"/>
+                        <outlet property="shoePicker" destination="12a-c3-Ucq" id="rVe-8Y-JOa"/>
+                        <outlet property="sizePicker" destination="9dy-nO-qNe" id="mOW-CW-gOZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PG-I2-RAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
