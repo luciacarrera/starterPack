@@ -723,6 +723,7 @@
                     <connections>
                         <outlet property="fromLabel" destination="oVk-bX-sYd" id="JAF-E7-WDB"/>
                         <outlet property="fromText" destination="oHQ-D8-MHW" id="Mjq-h2-vJT"/>
+                        <outlet property="mainScreen" destination="773-NR-Fm5" id="Arr-rf-ngW"/>
                         <outlet property="toLabel" destination="cSc-6A-dNP" id="6iL-4E-Iwm"/>
                         <outlet property="toText" destination="DfW-BV-F4k" id="RqI-9h-6sE"/>
                     </connections>

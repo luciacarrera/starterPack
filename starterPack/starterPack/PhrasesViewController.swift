@@ -11,6 +11,8 @@ import LanguageTranslatorV3
 class PhrasesViewController: UIViewController {
     
     var user: User!
+    var loading = true
+    @IBOutlet var mainScreen: UIView!
     @IBOutlet var fromLabel: UILabel!
     @IBOutlet var toLabel: UILabel!
     @IBOutlet var fromText: UITextView!
@@ -50,12 +52,23 @@ class PhrasesViewController: UIViewController {
         return output
     }
     
-    var translations = [String]()
+//    var translations = [String]()
+    var translations: [String] = [
+        "¿Cómo estás?",
+        "Me gustaría ___",
+        "¿Donde está el baño?",
+        "¿Qué hora es?",
+        "¿Dónde puedo encontrar una tienda de comestibles?",
+        "¿Cuánto cuesta este?"
+    ]
     
     func getPhrases() -> [String] {
+        var translations = [String]()
         for phrase in phrases {
             translations.append(translate(to: toLanguage, from: fromLanguage, input: phrase)!)
+            print(phrase)
         }
+        loading = false
         return translations
     }
     
@@ -78,7 +91,11 @@ class PhrasesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLabels()
-        translations = getPhrases()
+        let loadingScreen = UIView()
+        loadingScreen.backgroundColor = .white
+        self.view = loadingScreen
+//        translations = getPhrases()
+        self.view = mainScreen
         fromText.text = phrases[currentIndex]
         toText.text = translations[currentIndex]
 
