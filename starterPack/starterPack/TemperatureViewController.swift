@@ -44,7 +44,7 @@ class TemperatureViewController: UIViewController {
         if let celsiusValue = fahrenheitValue?.converted(to: .celsius) {
             celsiusField.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
         } else {
-            celsiusField.text = "32"
+            celsiusField.text = "0"
         }
     }
     
@@ -52,7 +52,7 @@ class TemperatureViewController: UIViewController {
         if let fahrenheitValue = celsiusValue?.converted(to: .fahrenheit) {
             fahrenheitField.text = numberFormatter.string(from: NSNumber(value: fahrenheitValue.value))
         } else {
-            fahrenheitField.text = "0"
+            fahrenheitField.text = "32"
         }
     }
     
