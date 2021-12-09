@@ -20,6 +20,10 @@ class TrafficViewController: UIViewController {
     
     var speedLimitVisible = false
     
+    var yieldVisible = false
+    
+    var rightTurnVisible = false
+    
     let traffic_descriptions: [String:String] = ["Traffic side": "The US drives on the right side of the road.", "Speed limit":"US speed limit signs are in "]
     
     override func viewDidLoad() {
