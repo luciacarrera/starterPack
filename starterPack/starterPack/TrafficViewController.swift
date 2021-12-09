@@ -15,6 +15,8 @@ class TrafficViewController: UIViewController {
     var drivingSide: UIButton!
     @IBOutlet var interstate: UIButton!
     @IBOutlet var speedLimit: UIButton!
+    @IBOutlet var yield: UIButton!
+    @IBOutlet var rightTurn: UIButton!
     
     var interstateVisible = false
     
@@ -34,6 +36,12 @@ class TrafficViewController: UIViewController {
         
         speedLimit.setTitleColor(UIColor.clear, for: .normal)
         speedLimit.backgroundColor = UIColor.clear
+        
+        yield.setTitleColor(UIColor.clear, for: .normal)
+        yield.backgroundColor = UIColor.clear
+        
+        rightTurn.setTitleColor(UIColor.clear, for: .normal)
+        rightTurn.backgroundColor = UIColor.clear
 //        // Do any additional setup after loading the view.
 //        let margins = view.layoutMarginsGuide
 //
@@ -81,6 +89,41 @@ class TrafficViewController: UIViewController {
             self.interstate.backgroundColor = colorList[0]
         }
     }
+    
+    @IBAction func animateYield(_ sender: Any) {
+        print("interstate button pressed")
+        var colorList: [UIColor] = []
+        if yieldVisible {
+            colorList = invisColors
+            yieldVisible = false
+        } else {
+            colorList = visColors
+            yieldVisible = true
+        }
+        print(colorList)
+        UIView.animate(withDuration: 0.5) {
+            self.yield.setTitleColor(colorList[1], for: .normal)
+            self.yield.backgroundColor = colorList[0]
+        }
+    }
+    
+    @IBAction func animateRighTurn(_ sender: Any) {
+        print("interstate button pressed")
+        var colorList: [UIColor] = []
+        if rightTurnVisible {
+            colorList = invisColors
+            rightTurnVisible = false
+        } else {
+            colorList = visColors
+            rightTurnVisible = true
+        }
+        print(colorList)
+        UIView.animate(withDuration: 0.5) {
+            self.rightTurn.setTitleColor(colorList[1], for: .normal)
+            self.rightTurn.backgroundColor = colorList[0]
+        }
+    }
+    
     
     @IBAction func animateSpeedLimit(_ sender: Any) {
         print("speedLimit button pressed")

@@ -733,14 +733,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obo-s6-dCy">
+                                <rect key="frame" x="37" y="465" width="137" height="133"/>
+                                <state key="normal" title="Button" image="yield"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f89-2d-elg">
+                                <rect key="frame" x="219" y="464" width="137" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="Baz-Zz-flp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="stop"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ob2-Ez-J4o">
-                                <rect key="frame" x="219" y="465" width="137" height="119"/>
+                                <rect key="frame" x="219" y="465" width="137" height="156"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="You can turn on red lights and stop signs (unless a sign says you can't) if you exercise caution.">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="animateSpeedLimit:" destination="raR-NU-WTg" eventType="touchDown" id="x59-XS-6KY"/>
+                                    <action selector="animateRighTurn:" destination="raR-NU-WTg" eventType="touchDown" id="ZyP-gZ-0uC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-Lu-IE0">
@@ -775,66 +786,57 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TDN-bB-keq">
-                                <rect key="frame" x="37" y="465" width="137" height="119"/>
+                                <rect key="frame" x="37" y="465" width="137" height="139"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Drivers must yield for pedestrians. The yield sign means you must slow down and give right of way to other vehicles.">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="animateSpeedLimit:" destination="raR-NU-WTg" eventType="touchDown" id="l7U-sm-078"/>
+                                    <action selector="animateYield:" destination="raR-NU-WTg" eventType="touchDown" id="sTd-qk-b4L"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obo-s6-dCy">
-                                <rect key="frame" x="37" y="465" width="137" height="133"/>
-                                <state key="normal" title="Button" image="yield"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f89-2d-elg">
-                                <rect key="frame" x="219" y="464" width="137" height="133"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="133" id="Baz-Zz-flp"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="stop"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1BU-Ha-jqr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TDN-bB-keq" firstAttribute="trailing" secondItem="YSx-1l-b1e" secondAttribute="trailing" id="1ZH-8K-eU7"/>
                             <constraint firstItem="YSx-1l-b1e" firstAttribute="trailing" secondItem="dRZ-Lu-IE0" secondAttribute="trailing" id="2Nd-zI-SMf"/>
                             <constraint firstItem="jGi-cO-dqx" firstAttribute="bottom" secondItem="Ces-tp-650" secondAttribute="bottom" id="2zP-eW-evm"/>
-                            <constraint firstItem="f89-2d-elg" firstAttribute="trailing" secondItem="Ob2-Ez-J4o" secondAttribute="trailing" id="3va-yY-hZf"/>
-                            <constraint firstItem="Obo-s6-dCy" firstAttribute="trailing" secondItem="TDN-bB-keq" secondAttribute="trailing" id="5PB-fS-5B0"/>
+                            <constraint firstItem="TDN-bB-keq" firstAttribute="leading" secondItem="YSx-1l-b1e" secondAttribute="leading" id="6kW-WQ-6za"/>
                             <constraint firstItem="YSx-1l-b1e" firstAttribute="top" secondItem="dRZ-Lu-IE0" secondAttribute="top" id="7bg-nW-4NU"/>
-                            <constraint firstItem="TDN-bB-keq" firstAttribute="leading" secondItem="dRZ-Lu-IE0" secondAttribute="leading" id="86P-Q0-g5e"/>
+                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="trailing" secondItem="f89-2d-elg" secondAttribute="trailing" id="9ot-in-sDq"/>
+                            <constraint firstItem="TDN-bB-keq" firstAttribute="trailing" secondItem="Obo-s6-dCy" secondAttribute="trailing" id="Agk-7y-bjp"/>
+                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="leading" secondItem="f89-2d-elg" secondAttribute="leading" id="DHT-Cf-4eL"/>
                             <constraint firstItem="jGi-cO-dqx" firstAttribute="trailing" secondItem="Ces-tp-650" secondAttribute="trailing" id="FBn-5c-qXL"/>
                             <constraint firstItem="1BU-Ha-jqr" firstAttribute="bottom" secondItem="f89-2d-elg" secondAttribute="bottom" constant="265" id="HoH-5d-FrY"/>
-                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="firstBaseline" secondItem="TDN-bB-keq" secondAttribute="firstBaseline" id="INh-Qw-h1O"/>
                             <constraint firstItem="dRZ-Lu-IE0" firstAttribute="top" secondItem="1BU-Ha-jqr" secondAttribute="top" constant="164" id="KGj-eE-dfl"/>
-                            <constraint firstItem="Obo-s6-dCy" firstAttribute="leading" secondItem="TDN-bB-keq" secondAttribute="leading" id="KXQ-cc-CFl"/>
-                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="bottom" secondItem="TDN-bB-keq" secondAttribute="bottom" id="QLN-69-AAy"/>
-                            <constraint firstItem="f89-2d-elg" firstAttribute="leading" secondItem="Ob2-Ez-J4o" secondAttribute="leading" id="QU2-lf-XtZ"/>
-                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="leading" secondItem="Ces-tp-650" secondAttribute="leading" id="Rxd-Ng-tGZ"/>
+                            <constraint firstItem="TDN-bB-keq" firstAttribute="trailing" secondItem="YSx-1l-b1e" secondAttribute="trailing" id="WLd-Fn-Gev"/>
+                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="firstBaseline" secondItem="TDN-bB-keq" secondAttribute="firstBaseline" id="YPK-hi-myB"/>
                             <constraint firstItem="1BU-Ha-jqr" firstAttribute="trailing" secondItem="Ces-tp-650" secondAttribute="trailing" constant="58" id="Yuh-xH-O42"/>
+                            <constraint firstItem="TDN-bB-keq" firstAttribute="leading" secondItem="Obo-s6-dCy" secondAttribute="leading" id="ZRd-hA-Qdp"/>
                             <constraint firstItem="1BU-Ha-jqr" firstAttribute="bottom" secondItem="dRZ-Lu-IE0" secondAttribute="bottom" constant="491" id="Za2-4d-nKD"/>
+                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="trailing" secondItem="jGi-cO-dqx" secondAttribute="trailing" id="aoR-lu-1gn"/>
                             <constraint firstItem="1BU-Ha-jqr" firstAttribute="bottom" secondItem="Obo-s6-dCy" secondAttribute="bottom" constant="264" id="aq7-g9-mlm"/>
                             <constraint firstItem="YSx-1l-b1e" firstAttribute="leading" secondItem="dRZ-Lu-IE0" secondAttribute="leading" id="bW9-Dv-akc"/>
+                            <constraint firstItem="1BU-Ha-jqr" firstAttribute="bottom" secondItem="Ob2-Ez-J4o" secondAttribute="bottom" constant="241" id="cC7-ch-0ji"/>
                             <constraint firstItem="Ces-tp-650" firstAttribute="leading" secondItem="dRZ-Lu-IE0" secondAttribute="trailing" constant="45" id="gAy-Ct-5Nc"/>
-                            <constraint firstItem="1BU-Ha-jqr" firstAttribute="bottom" secondItem="TDN-bB-keq" secondAttribute="bottom" constant="278" id="gGF-9l-lvX"/>
+                            <constraint firstItem="TDN-bB-keq" firstAttribute="top" secondItem="Obo-s6-dCy" secondAttribute="top" id="hKf-dv-Rog"/>
                             <constraint firstItem="1BU-Ha-jqr" firstAttribute="bottom" secondItem="Ces-tp-650" secondAttribute="bottom" constant="505" id="hY5-hz-P4g"/>
-                            <constraint firstItem="TDN-bB-keq" firstAttribute="top" secondItem="dRZ-Lu-IE0" secondAttribute="bottom" constant="94" id="hcG-xW-KML"/>
-                            <constraint firstItem="Obo-s6-dCy" firstAttribute="top" secondItem="TDN-bB-keq" secondAttribute="top" id="iEb-rK-QkD"/>
                             <constraint firstItem="Ces-tp-650" firstAttribute="top" secondItem="1BU-Ha-jqr" secondAttribute="top" constant="175" id="jv3-GY-iiT"/>
                             <constraint firstItem="dRZ-Lu-IE0" firstAttribute="leading" secondItem="1BU-Ha-jqr" secondAttribute="leading" constant="37" id="nbz-kR-kJd"/>
-                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="trailing" secondItem="jGi-cO-dqx" secondAttribute="trailing" id="o32-4m-804"/>
+                            <constraint firstItem="Ob2-Ez-J4o" firstAttribute="leading" secondItem="jGi-cO-dqx" secondAttribute="leading" id="q1s-Wv-NCx"/>
+                            <constraint firstItem="TDN-bB-keq" firstAttribute="top" secondItem="dRZ-Lu-IE0" secondAttribute="bottom" constant="94" id="r9q-s1-WyS"/>
                             <constraint firstItem="jGi-cO-dqx" firstAttribute="leading" secondItem="Ces-tp-650" secondAttribute="leading" id="srs-0R-mao"/>
                             <constraint firstItem="jGi-cO-dqx" firstAttribute="top" secondItem="Ces-tp-650" secondAttribute="top" id="tgP-qv-3Cg"/>
+                            <constraint firstItem="1BU-Ha-jqr" firstAttribute="bottom" secondItem="TDN-bB-keq" secondAttribute="bottom" constant="258" id="xXa-SA-pjd"/>
                             <constraint firstItem="YSx-1l-b1e" firstAttribute="bottom" secondItem="dRZ-Lu-IE0" secondAttribute="bottom" id="yLH-Am-DDD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h3j-ji-UBI"/>
                     <connections>
                         <outlet property="interstate" destination="jGi-cO-dqx" id="BsO-sr-dP4"/>
+                        <outlet property="rightTurn" destination="Ob2-Ez-J4o" id="70p-Ag-dfV"/>
                         <outlet property="speedLimit" destination="YSx-1l-b1e" id="BFg-Wa-wvg"/>
+                        <outlet property="yield" destination="TDN-bB-keq" id="1ab-5v-knQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjA-o3-mxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
