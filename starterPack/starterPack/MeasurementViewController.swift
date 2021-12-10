@@ -19,6 +19,7 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet var toField: UITextField!
     @IBOutlet var toLabel: UILabel!
     
+    
     @IBOutlet var lengthButton: UIButton!
     @IBOutlet var weightButton:UIButton!
     
@@ -31,6 +32,7 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        toField.isUserInteractionEnabled = false
         
         toPicker.dataSource = self
         toPicker.delegate = self
@@ -62,13 +64,18 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
     var to_type = "meter"
     
     func convert (_ val : Double, _ from_type : String, _ to_type : String, _ conv_type : String) -> Double{
-        let conversion_keys: [String:String] = ["length": "ft"]
-        let conversions = ["length": [["ft":1.0, "meter":0.3048, "centimeter":0.0328084, "mile":0.000189394, "inch":12, "yard":0.3333]]]
-        
-        
-        let conv_base = conversions[conv_type]![0][conversion_keys[conv_type]!]!
-        let conv_from = conversions[conv_type]![0][from_type]!
-        let conv_to = conversions[conv_type]![0][to_type]!
+        //let conversion_keys: [String:String] = ["length": "ft"]
+        //let conversions = ["length": [["ft":1.0, "meter":0.3048, "centimeter":0.0328084, "mile":0.000189394, "inch":12, "yard":0.3333]]]
+        let conversion_keys: [String:String] = ["length": "ft", "weight":"kg"]
+        let conversions = ["length": [["ft":1.0, "meter":0.3048, "centimeter":0.0328084, "mile":0.000189394, "inch":12, "yard":0.3333, "kilometer":0.0003048]], "weight":[["kg":1.0, "g":1000.00, "mg":10000.00]]]
+        print("\n\n")
+        print(currentConversion)
+        print(conversions[currentConversion])
+        print(from_type)
+        print(conversions[currentConversion]![0][from_type])
+        let conv_base = conversions[currentConversion]![0][conversion_keys[currentConversion]!]!
+        let conv_from = conversions[currentConversion]![0][from_type]!
+        let conv_to = conversions[currentConversion]![0][to_type]!
         let conv_val = val * (conv_from / conv_base) / conv_to
         
         return conv_val
@@ -76,7 +83,7 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
 
     func updateToField() {
         if let x =  Double(fromField.text!) {
-            toField.text = String(format:"%.2f", convert(x, from_type, to_type, conv_type)) //= convert(x, from_type, to_type, conv_type)
+            toField.text = String(format:"%.2f", convert(x, to_type, from_type, currentConversion)) //= convert(x, from_type, to_type, conv_type)
         } else {
             toField.text = ""
         }
@@ -85,7 +92,7 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
     func updateFromField() {
         print("from updated")
         if let x =  Double(toField.text!) {
-            fromField.text = String(format:"%.2f", convert(x, from_type, to_type, conv_type))
+            fromField.text = String(format:"%.2f", convert(x, to_type, to_type, currentConversion))
         } else {
             fromField.text = ""
         }
@@ -93,11 +100,19 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
     
     @IBAction func changeToLength(_ sender: Any) {
         currentConversion = "length"
+        from_type = "ft"
+        to_type = "ft"
+        toValue = 0
+        fromValue = 0
         updateAll()
     }
     
     @IBAction func changeToWeight(_ sender: Any) {
         currentConversion = "weight"
+        from_type = "g"
+        to_type = "g"
+        toValue = 0
+        fromValue = 0
         updateAll()
     }
     
@@ -105,12 +120,12 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
         fromPicker.reloadAllComponents()
         toPicker.reloadAllComponents()
         if let text = fromField.text, let value = Double(text) {
-            fromValue = convert(value, to_type, from_type, conv_type)
+            fromValue = convert(value, to_type, from_type, currentConversion)
         } else {
             fromValue = 0
         }
         if let text = toField.text, let value = Double(text) {
-            toValue = convert(value, from_type, to_type, conv_type)
+            toValue = convert(value, from_type, to_type, currentConversion)
         } else {
             toValue = 0
         }
@@ -118,7 +133,7 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
     @IBAction func fromFieldEditingChanged(_ fromField: UITextField) {
         print("from changed")
         if let text = fromField.text, let value = Double(text) {
-            fromValue = convert(value, to_type, from_type, conv_type)
+            fromValue = convert(value, from_type, to_type, currentConversion)
         } else {
             fromValue = 0
         }
@@ -127,7 +142,7 @@ class MeasurementViewController: UIViewController, UIPickerViewDelegate {
     @IBAction func toFieldEditingChanged(_ celsiusField: UITextField) {
         print("to changed")
         if let text = toField.text, let value = Double(text) {
-            toValue = convert(value, from_type, to_type, conv_type)
+            toValue = convert(value, to_type, from_type, currentConversion)
         } else {
             toValue = 0
         }
@@ -169,10 +184,13 @@ extension MeasurementViewController: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         //to
+        
         if pickerView.tag == 1 {
             to_type = String(Array(conversions[currentConversion]![0].keys)[row])
             toLabel.text = String(Array(conversions[currentConversion]![0].keys)[row])
             print(to_type)
+            toValue = 0
+            fromValue = 0
             return String(Array(conversions[currentConversion]![0].keys)[row])
         }
         //from
@@ -180,6 +198,8 @@ extension MeasurementViewController: UIPickerViewDataSource {
             from_type = String(Array(conversions[currentConversion]![0].keys)[row])
             fromLabel.text = String(Array(conversions[currentConversion]![0].keys)[row])
             print(from_type)
+            toValue = 0
+            fromValue = 0
             return String(Array(conversions[currentConversion]![0].keys)[row])
         }
         else {
